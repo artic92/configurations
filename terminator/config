@@ -44,6 +44,65 @@
       profile = default
       type = Terminal
       uuid = adba9f96-225e-41fd-800f-b6ce3c6fb4f2
+  [[repos]]
+    [[[child0]]]
+      fullscreen = False
+      last_active_term = 3352d3ca-f7d7-4f1d-8ae4-f665bb972632
+      last_active_window = False
+      maximised = True
+      order = 0
+      parent = ""
+      position = 1131:455
+      size = 1869, 1025
+      title = ariccio@pktariccio: ~
+      type = Window
+    [[[child1]]]
+      order = 0
+      parent = child0
+      position = 864
+      ratio = 0.463519313305
+      type = HPaned
+    [[[child2]]]
+      order = 0
+      parent = child1
+      position = 510
+      ratio = 0.5
+      type = VPaned
+    [[[child5]]]
+      order = 1
+      parent = child1
+      position = 510
+      ratio = 0.5
+      type = VPaned
+    [[[terminal3]]]
+      directory = /home/ariccio/bash_scripting
+      order = 0
+      parent = child2
+      profile = default
+      type = Terminal
+      uuid = 3352d3ca-f7d7-4f1d-8ae4-f665bb972632
+    [[[terminal4]]]
+      directory = /home/ariccio/configurations
+      order = 1
+      parent = child2
+      profile = default
+      type = Terminal
+      uuid = e19b6d41-61d1-4464-8635-e6277f248978
+    [[[terminal6]]]
+      directory = /home/ariccio/airspan
+      order = 0
+      parent = child5
+      profile = default
+      type = Terminal
+      uuid = 02e47dd7-0f4b-4ac5-88cd-9d042c6297d2
+    [[[terminal7]]]
+      command = ""
+      directory = /home/ariccio/howtos
+      order = 1
+      parent = child5
+      profile = default
+      type = Terminal
+      uuid = 02e47dd7-0f4b-4ac5-88cd-9d042c6297d2
 [plugins]
 [profiles]
   [[default]]
