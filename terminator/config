@@ -105,6 +105,38 @@
       profile = default
       type = Terminal
       uuid = adba9f96-225e-41fd-800f-b6ce3c6fb4f2
+  [[ueapilogs]]
+    [[[child0]]]
+      fullscreen = False
+      last_active_term = 0b7a8cd6-d275-48b7-9999-d94a8de23ccc
+      last_active_window = True
+      maximised = True
+      order = 0
+      parent = ""
+      position = 1147:455
+      size = 1853, 1025
+      title = ariccio@pktariccio: ~
+      type = Window
+    [[[child1]]]
+      order = 0
+      parent = child0
+      position = 836
+      ratio = 0.452380952381
+      type = HPaned
+    [[[terminal2]]]
+      command = ssh airspan@10.21.0.2; bash;
+      order = 0
+      parent = child1
+      profile = default
+      type = Terminal
+      uuid = 0b7a8cd6-d275-48b7-9999-d94a8de23ccc
+    [[[terminal3]]]
+      command = ssh airspan@10.21.0.2; bash;
+      order = 1
+      parent = child1
+      profile = default
+      type = Terminal
+      uuid = f88816ec-2d98-4de7-90ea-52036b86cabd
   [[repos]]
     [[[child0]]]
       fullscreen = False
