@@ -43,6 +43,67 @@
       parent = child3
       profile = default
       type = Terminal
+      uuid = 03f1c295-3c3e-4658-a024-989985b4d32a
+  [[ueapi]]
+    [[[child0]]]
+      fullscreen = False
+      last_active_term = 0b7a8cd6-d275-48b7-9999-d94a8de23ccc
+      last_active_window = True
+      maximised = True
+      order = 0
+      parent = ""
+      position = 1147:455
+      size = 1853, 1025
+      title = ariccio@pktariccio: ~
+      type = Window
+    [[[child1]]]
+      order = 0
+      parent = child0
+      position = 635
+      ratio = 0.343614718615
+      type = HPaned
+    [[[child2]]]
+      order = 0
+      parent = child1
+      position = 784
+      ratio = 0.76862745098
+      type = VPaned
+    [[[child5]]]
+      order = 1
+      parent = child1
+      position = 198
+      ratio = 0.194117647059
+      type = VPaned
+    [[[terminal3]]]
+      command = ./run.sh; bash
+      directory = /home/ariccio/dockerbuildenv
+      order = 0
+      parent = child2
+      profile = default
+      type = Terminal
+      uuid = 0b7a8cd6-d275-48b7-9999-d94a8de23ccc
+    [[[terminal4]]]
+      command = ""
+      directory = /home/ariccio/docker-work/synergy/utils/irelay/maltest
+      order = 1
+      parent = child2
+      profile = default
+      type = Terminal
+      uuid = 3352d3ca-f7d7-4f1d-8ae4-f665bb972632
+    [[[terminal6]]]
+      command = ssh airspan@10.21.0.2; bash;
+      directory = ""
+      order = 0
+      parent = child5
+      profile = default
+      type = Terminal
+      uuid = dad9cf1a-995d-4ff9-9969-3d298b5bcee8
+    [[[terminal7]]]
+      command = ssh airspan@10.21.0.2; bash;
+      order = 1
+      parent = child5
+      profile = default
+      type = Terminal
       uuid = adba9f96-225e-41fd-800f-b6ce3c6fb4f2
   [[repos]]
     [[[child0]]]
