@@ -6,12 +6,24 @@
   # List available aliases (not working)
   aliases = !git config --get-regexp alias | sed -re 's/alias\\.(\\S*)\\s(.*)$/\\1 = \\2/g'
   # Command shortcuts
+  f = fetch
   ci = commit
   co = checkout
   st = status
   br = branch
+  cp = cherry-pick
+  rb = rebase
+  rbi = rebase -i
+  rbir = rebase -i --root
+  rbc = rebase --continue
+  rba = rebase --abort
+  bra = branch -a
+  sta = stash
+  stl = stash list
   df = diff --color-words='[^[:space:]]'
   sh = show --color-words='[^[:space:]]'
+  # Reuse the last dropped commit message
+  rci = commit -C HEAD@{1}
   # Display tree-like log
   lg = log --graph --date=relative --pretty=tformat:'%Cred%h%Creset -%C(auto)%d%Creset %s %Cgreen(%an %ad)%Creset'
   # Useful when you have to update your last commit
