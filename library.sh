@@ -119,10 +119,14 @@ setup_vscode()
     $ECHO "\t- Type: 'alt' + 'shift' + 'u'\n"
 }
 
-setup_ssh()
+function setup_ssh()
 {
     $LN $HOME/configurations/ssh/known_hosts $HOME/.ssh/known_hosts
-    $LN $HOME/configurations/ssh/macos/config $HOME/.ssh/config
+
+    if [[ "$OSTYPE" == "darwin"* ]]; then
+        # Mac OSX
+        $LN $HOME/configurations/ssh/macos/config $HOME/.ssh/config
+    fi
 }
 
 setup_gdb()
