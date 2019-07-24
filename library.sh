@@ -85,18 +85,19 @@ setup_git()
 # set the current user as sudo
 
 # install bashrc
-setup_bash_linux()
+function setup_bash()
 {
-    $LN $HOME/configurations/bash/.bashrc $HOME/.bashrc
-    $LN $HOME/configurations/bash/.bash_aliases $HOME/.bash_aliases
-    source $HOME/.bashrc
-}
+    local bash_link_name=bashrc
 
-# install bash_profile
-setup_bash_macos()
-{
-    $LN $HOME/configurations/macos/.bash_profile $HOME/.bash_profile
-    source $HOME/.bash_profile
+    $LN $HOME/configurations/bash/.bash_aliases $HOME/.bash_aliases
+
+    if [[ "$OSTYPE" == "darwin"* ]]
+    then
+        bash_link_name=bash_profile
+    fi
+
+    $LN $HOME/configurations/bash/.bashrc $HOME/".$bash_link_name"
+    source $HOME/".$bash_link_name"
 }
 
 # install vim configuration

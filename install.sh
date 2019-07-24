@@ -41,7 +41,7 @@ git_clone_base_repos
 $ECHO "[VIM] Configuring vim...\n"
 setup_vim
 $ECHO "[BASH] Configuring bash...\n"
-setup_bash_linux
+setup_bash
 $ECHO "[SSH] Configuring ssh...\n"
 setup_ssh
 $ECHO "[GDB] Configuring gdb...\n"
