@@ -2,14 +2,19 @@
 #   GENERAL ALIASES
 #   -----------------------------
 
-alias ls='ls --color=auto'
-#alias dir='dir --color=auto'
-#alias vdir='vdir --color=auto'
+if [[ "$OSTYPE" == "linux-gnu" ]]
+then
+    alias ls='ls --color=auto'
+    #alias dir='dir --color=auto'
+    #alias vdir='vdir --color=auto'
 
-alias grep='grep --color=auto'
-alias fgrep='fgrep --color=auto'
-alias egrep='egrep --color=auto'
-
+    alias grep='grep --color=auto'
+    alias fgrep='fgrep --color=auto'
+    alias egrep='egrep --color=auto'
+elif [[ "$OSTYPE" == "darwin"* ]]
+then
+    alias ls='ls -G'
+fi
 
 alias cp='cp -iv'                           # Preferred 'cp' implementation
 alias mv='mv -iv'                           # Preferred 'mv' implementation
