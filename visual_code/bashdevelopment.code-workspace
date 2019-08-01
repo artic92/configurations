@@ -5,6 +5,9 @@
 		},
 		{
 			"path": "../../bash_scripting"
+		},
+		{
+			"path": "../../create_ap"
 		}
 	],
 	"settings": {}
