@@ -105,6 +105,79 @@
       profile = default
       type = Terminal
       uuid = adba9f96-225e-41fd-800f-b6ce3c6fb4f2
+  [[ueapid]]
+    [[[child0]]]
+      fullscreen = False
+      last_active_term = adba9f96-225e-41fd-800f-b6ce3c6fb4f2
+      last_active_window = True
+      maximised = True
+      order = 0
+      parent = ""
+      position = 1131:455
+      size = 1869, 1025
+      title = ariccio@pktariccio: ~
+      type = Window
+    [[[child1]]]
+      order = 0
+      parent = child0
+      position = 640
+      ratio = 0.343347639485
+      type = HPaned
+    [[[child2]]]
+      order = 0
+      parent = child1
+      position = 512
+      ratio = 0.501960784314
+      type = VPaned
+    [[[child5]]]
+      order = 1
+      parent = child1
+      position = 198
+      ratio = 0.194117647059
+      type = VPaned
+    [[[child7]]]
+      order = 1
+      parent = child5
+      position = 829
+      ratio = 0.678396072013
+      type = HPaned
+    [[[terminal3]]]
+      command = ./run.sh; bash
+      directory = /home/ariccio/dockerbuildenv
+      order = 0
+      parent = child2
+      profile = default
+      type = Terminal
+      uuid = 0b7a8cd6-d275-48b7-9999-d94a8de23ccc
+    [[[terminal4]]]
+      command = ""
+      directory = /home/ariccio/docker-work/synergy/utils/irelay/maltest
+      order = 1
+      parent = child2
+      profile = default
+      type = Terminal
+      uuid = 3352d3ca-f7d7-4f1d-8ae4-f665bb972632
+    [[[terminal6]]]
+      command = ssh airspan@10.21.0.2; bash;
+      order = 0
+      parent = child5
+      profile = default
+      type = Terminal
+      uuid = dad9cf1a-995d-4ff9-9969-3d298b5bcee8
+    [[[terminal8]]]
+      command = ssh airspan@10.21.0.2; bash;
+      order = 0
+      parent = child7
+      profile = default
+      type = Terminal
+      uuid = adba9f96-225e-41fd-800f-b6ce3c6fb4f2
+    [[[terminal9]]]
+      command = ssh airspan@10.21.0.2; bash;
+      order = 1
+      parent = child7
+      profile = default
+      type = Terminal
+      uuid = 5b1e5c51-9998-4313-a36c-483c39be3d23
   [[ueapilogs]]
     [[[child0]]]
       fullscreen = False
