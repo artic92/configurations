@@ -1,0 +1,29 @@
+{
+	"folders": [
+		{
+			"name": "languages",
+			"path": "../../awesome-cheatsheets/languages"
+		},
+		{
+			"name": "howtos",
+			"path": "../../howtos"
+		},
+		{
+			"name": "c_codebase",
+			"path": "../../c_codebase"
+		},
+		{
+			"name": "linux",
+			"path": "../../linux"
+		},
+		{
+			"name": "examples",
+			"path": "../../examples"
+		},
+		{
+			"name": "network",
+			"path": "../../network"
+		}
+	],
+	"settings": {}
+}
