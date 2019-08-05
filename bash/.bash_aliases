@@ -44,7 +44,7 @@ alias edit='code'                           # edit:         Opens any file in vi
 alias path='echo -e ${PATH//:/\\n}'         # path:         Echo all executable Paths
 alias cic='set completion-ignore-case On'   # cic:          Make tab-completion case-insensitive
 mcd () { mkdir -p "$1" && cd "$1"; }        # mcd:          Makes new Dir and jumps inside
-source $HOME/bash_scripting/go_command.sh   # go:	        Move faster between directories
+source $HOME/configurations/go_command.sh   # go:	        Move faster between directories
 
 alias f='open -a Finder ./'                 # f:            Opens current directory in MacOS Finder
 alias DT='tee ~/Desktop/terminalOut.txt'    # DT:           Pipe content to file on MacOS Desktop
