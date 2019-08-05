@@ -1,0 +1,11 @@
+{
+	"folders": [
+		{
+			"path": "../../hostapd"
+		},
+		{
+			"path": "../../create_ap"
+		}
+	],
+	"settings": {}
+}
