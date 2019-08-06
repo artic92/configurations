@@ -21,6 +21,7 @@ PKT_MGR_OPTS=-y
 INSTALL="$SUDO $PKT_MNGR $PKT_MNGR_CMD $PKT_MGR_OPTS"
 
 HOME=~
+SSH_DIR=$HOME/.ssh
 
 DEBUG=true
 
@@ -121,11 +122,17 @@ setup_vscode()
 
 function setup_ssh()
 {
-    $LN $HOME/configurations/ssh/known_hosts $HOME/.ssh/known_hosts
+    if [[ ! -d $SSH_DIR ]]
+    then
+        $MKDIR $SSH_DIR
+    fi
 
-    if [[ "$OSTYPE" == "darwin"* ]]; then
+    $LN $HOME/configurations/ssh/known_hosts $SSH_DIR/known_hosts
+
+    if [[ "$OSTYPE" == "darwin"* ]]
+    then
         # Mac OSX
-        $LN $HOME/configurations/ssh/macos/config $HOME/.ssh/config
+        $LN $HOME/configurations/ssh/macos/config $SSH_DIR/config
     fi
 }
 
