@@ -13,6 +13,7 @@ CP='cp -r'
 LN='ln -sf'
 RM='rm -rf'
 CD=cd
+MKDIR=mkdir
 GIT=git
 SUDO=sudo
 PKT_MNGR=apt-get
