@@ -49,7 +49,7 @@ setup_gdb
 $ECHO "[TERMINATOR] Configuring terminator...\n"
 setup_terminator
 $ECHO "[FILEZILLA] Configuring filezilla...\n"
-setup_filezilla configurations
+setup_filezilla
 $ECHO "[GO] Configuring go command...\n"
 setup_go
 

@@ -23,6 +23,7 @@ INSTALL="$SUDO $PKT_MNGR $PKT_MNGR_CMD $PKT_MGR_OPTS"
 
 HOME=~
 SSH_DIR=$HOME/.ssh
+CONFIGURATIONS_DIR=$HOME/configurations
 
 DEBUG=true
 
@@ -148,12 +149,17 @@ function setup_go()
     $LN $HOME/configurations/go/.go $HOME/
 }
 
-# INPUT paramenters
-# $1: name of the git repo where taking the files
-setup_filezilla()
+function setup_filezilla()
 {
-    $LN $HOME/$1/filezilla/filezilla.xml $HOME/.config/filezilla/filezilla.xml
-    $LN $HOME/$1/filezilla/sitemanager.xml $HOME/.config/filezilla/sitemanager.xml
+    local filezilla_dir="$HOME/.config/filezilla"
+
+    if [[ ! -d $filezilla_dir ]]
+    then
+        $MKDIR "$filezilla_dir"
+    fi
+
+    $LN $CONFIGURATIONS_DIR/filezilla/filezilla.xml $HOME/.config/filezilla/filezilla.xml
+    $LN $CONFIGURATIONS_DIR/filezilla/sitemanager.xml $HOME/.config/filezilla/sitemanager.xml
 }
 
 # install ssh keys
