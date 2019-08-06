@@ -8,6 +8,9 @@
 		},
 		{
 			"path": "../../create_ap"
+		},
+		{
+			"path": "../../configurations"
 		}
 	],
 	"settings": {}
