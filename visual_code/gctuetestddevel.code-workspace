@@ -1,0 +1,17 @@
+{
+	"folders": [
+		{
+			"path": "../../1033862"
+		},
+		{
+			"path": "../../network/unixdomain"
+		},
+		{
+			"path": "../../openssh-portable"
+		},
+		{
+			"path": "../../wpa_supplicant"
+		}
+	],
+	"settings": {}
+}
