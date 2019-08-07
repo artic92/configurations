@@ -1,0 +1,20 @@
+{
+	"folders": [
+		{
+			"path": "../../configurations"
+		},
+		{
+			"path": "../../howtos"
+		},
+		{
+			"path": "../../bash_scripting"
+		},
+		{
+			"path": "../../airspan"
+		},
+		{
+			"path": "../../awesome-cheatsheets/languages"
+		}
+	],
+	"settings": {}
+}
