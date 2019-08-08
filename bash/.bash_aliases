@@ -8,18 +8,20 @@ then
     #alias dir='dir --color=auto'
     #alias vdir='vdir --color=auto'
 
+    alias ll='ls -FlAhpkX --group-directories-first'
+
     alias grep='grep --color=auto'
     alias fgrep='fgrep --color=auto'
     alias egrep='egrep --color=auto'
 elif [[ "$OSTYPE" == "darwin"* ]]
 then
     alias ls='ls -G'
+    alias ll='ls -FlAhp'
 fi
 
 alias cp='cp -iv'                           # Preferred 'cp' implementation
 alias mv='mv -iv'                           # Preferred 'mv' implementation
 alias mkdir='mkdir -pv'                     # Preferred 'mkdir' implementation
-alias ll='ls -FlAhp'                        # Preferred 'ls' implementation
 alias la='ls -A'
 alias l='ls -CF'
 alias less='less -FSRXc'                    # Preferred 'less' implementation
