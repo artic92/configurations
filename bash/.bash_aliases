@@ -19,7 +19,7 @@ fi
 alias cp='cp -iv'                           # Preferred 'cp' implementation
 alias mv='mv -iv'                           # Preferred 'mv' implementation
 alias mkdir='mkdir -pv'                     # Preferred 'mkdir' implementation
-alias ll='ls -FGlAhp'                       # Preferred 'ls' implementation
+alias ll='ls -FlAhp'                        # Preferred 'ls' implementation
 alias la='ls -A'
 alias l='ls -CF'
 alias less='less -FSRXc'                    # Preferred 'less' implementation
