@@ -73,7 +73,7 @@ gitbranch() {
     if [ "$branch" == "master" ]; then
 	echo -ne "\e[41m$branch\e[49m"
     else
-        echo -n "$branch"
+      echo -ne "\e[93m$branch\e[39m"
     fi
   else
     echo -n ""
