@@ -24,6 +24,8 @@ INSTALL="$SUDO $PKT_MNGR $PKT_MNGR_CMD $PKT_MGR_OPTS"
 HOME=~
 SSH_DIR=$HOME/.ssh
 CONFIGURATIONS_DIR=$HOME/configurations
+HOWTOS_DIR=$HOME/howtos
+BASHSCRIPTING_DIR=$HOME/bash_scripting
 
 DEBUG=true
 
@@ -201,6 +203,22 @@ start_minidlna_as_local_user()
 {
     minidlnad -f $HOME/.config/minidlna/minidlna.conf -P $HOME/.config/minidlna/minidlna.pid
     #To autostart it at login, add the previous line to ~/.bash_profile
+}
+
+function git_change_remotes_to_ssh()
+{
+    local folders=($CONFIGURATIONS_DIR $HOWTOS_DIR $BASHSCRIPTING_DIR)
+    local repos=($GIT_REPO_SSH/configurations.git $GIT_REPO_SSH/howtos.git $GIT_REPO_SSH/bash_scripting.git)
+    local size=${#folders[@]}
+
+    for (( i = 0; i < ${size}; i++ ))
+    do
+        if [ -d ${folders[i]} ]
+        then
+            $CD ${folders[i]} &> /dev/null
+            $GIT remote set-url origin ${repos[i]}
+        fi
+    done
 }
 
 #   -------------------------------

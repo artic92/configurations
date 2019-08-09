@@ -33,6 +33,7 @@ $ECHO "\n[GIT] Configuring git...\n"
 setup_git
 $ECHO "\n[GIT] Installing repos\n"
 git_clone_base_repos
+git_change_remotes_to_ssh
 # $ECHO "\n[GIT] Installing repos (SSH)\n"
 # git_clone_base_repos_ssh
 # $ECHO "\n[GIT] Removing all repos!\n"
