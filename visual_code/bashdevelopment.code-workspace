@@ -11,6 +11,9 @@
 		},
 		{
 			"path": "../../configurations"
+		},
+		{
+			"path": "../../airspan"
 		}
 	],
 	"settings": {}
