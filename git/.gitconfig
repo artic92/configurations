@@ -43,9 +43,9 @@
   # Global ignore file (not shared)
   excludesfile = ~/.gitignore_global
   # VSCode
-  # editor = code --wait
+  editor = code --wait
   # Vim
-  editor = vim
+  # editor = vim
   # Don't consider trailing space change as a cause for merge conflicts
   # whitespace = -trailing-space
   # Treats trailing whitespaces at the end of the line as an error
