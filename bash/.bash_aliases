@@ -80,6 +80,26 @@ alias lr='ls -R | grep ":$" | sed -e '\''s/:$//'\'' -e '\''s/[^-][^\/]*\//--/g'\
 #   ------------------------------------------------------------
     showa () { /usr/bin/grep --color=always -i -a1 $@ ~/Library/init/bash/aliases.bash | grep -v '^\s*$' | less -FSRXc ; }
 
+#   -----------------------------
+#   PACKET MANAGEMENT
+#   -----------------------------
+
+if [[ "$OSTYPE" == "linux-gnu" ]];
+then
+    alias update='sudo apt-get update'
+    alias upgrade='sudo apt-get upgrade'
+    alias install='sudo apt-get -y install'
+    alias uninstall='sudo apt-get -y remove'
+    alias search='apt-cache search'
+elif [[ "$OSTYPE" == "darwin" ]];
+then
+    alias update='brew update'
+    alias upgrade='brew upgrade'
+    alias install='brew install'
+    alias uninstall='brew uninstall'
+    alias search='brew search'
+fi
+
 #   -------------------------------
 #   FILE AND FOLDER MANAGEMENT
 #   -------------------------------
