@@ -262,3 +262,15 @@ alias showBlocked='sudo ipfw list'                  # showBlocked:  All ipfw rul
 #    screensaverDesktop: Run a screensaver on the Desktop
 #   -----------------------------------------------------------------------------------
     alias screensaverDesktop='/System/Library/Frameworks/ScreenSaver.framework/Resources/ScreenSaverEngine.app/Contents/MacOS/ScreenSaverEngine -background'
+
+#   ---------------------------
+#   AIRSPAN
+#   ---------------------------
+
+#   pi:  Connect to the setupPC $1
+#   -----------------------------------------------------------------------------------
+    pi () { ssh airspan@10.21.0."$1"; }
+
+#   cpid2pi:  Copy the SSH key to the setupPC $1
+#   -----------------------------------------------------------------------------------
+    cpid2pi () { ssh-copy-id airspan@10.21.0."$1"; }
