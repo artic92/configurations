@@ -51,7 +51,13 @@ source $HOME/configurations/go_command.sh   # go:	        Move faster between di
 alias f='open -a Finder ./'                 # f:            Opens current directory in MacOS Finder
 alias DT='tee ~/Desktop/terminalOut.txt'    # DT:           Pipe content to file on MacOS Desktop
 ql () { qlmanage -p "$*" >& /dev/null; }    # ql:           Opens any file in MacOS Quicklook Preview
-trash () { command mv "$@" ~/.Trash ; }     # trash:        Moves a file to the MacOS trash
+if [[ "$OSTYPE" == "linux-gnu" ]];
+then
+    trash () { command mv "$@" ~/.local/share/Trash/files/ ; }     # trash:        Moves a file to the Linux trash
+elif [[ "$OSTYPE" == "darwin"* ]];
+then
+    trash () { command mv "$@" ~/.Trash ; }                        # trash:        Moves a file to the MacOS trash
+fi
 
 
 #    alert: Add an "alert" alias for long running commands.  Use like so:
