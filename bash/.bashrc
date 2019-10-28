@@ -72,9 +72,17 @@ gitbranch() {
   local branch_count=$(echo -n "$branch" | wc -w)
   if [[ $branch_count -ge 1 ]]; then
     if [ "$branch" == "master" ]; then
-	echo -ne "\e[41m$branch\e[49m"
+      if [[ "$OSTYPE" == "linux-gnu" ]]; then
+        echo -ne "\e[41m$branch\e[49m"
+      elif [[ "$OSTYPE" == "darwin"* ]]; then
+        echo -ne "\033[41m$branch\033[49m"
+      fi
     else
-      echo -ne "\e[93m$branch\e[39m"
+      if [[ "$OSTYPE" == "linux-gnu" ]]; then
+        echo -ne "\e[93m$branch\e[39m"
+      elif [[ "$OSTYPE" == "darwin"* ]]; then
+        echo -ne "\033[93m$branch\033[39m"
+      fi
     fi
   else
     echo -n ""
