@@ -1,0 +1,25 @@
+{
+	"folders": [
+		{
+			"name": "cheatsheets",
+			"path": "../../awesome-cheatsheets/languages"
+		},
+		{
+			"name": "c_codebase",
+			"path": "../../c_codebase"
+		},
+		{
+			"name": "examplesldd3",
+			"path": "../../ldd3"
+		},
+		{
+			"name": "examplegpiozynq",
+			"path": "../../gpio-zynq-7000"
+		},
+		{
+			"name": "linuxsrc",
+			"path": "../../linux"
+		}
+	],
+	"settings": {}
+}
