@@ -48,35 +48,6 @@ git_get_global_info()
 }
 
 #   -------------------------------
-#   REPOs INSTALL
-#   -------------------------------
-
-git_clone_base_repos_ssh()
-{
-    $CD $HOME
-
-    $GIT clone $GIT_REPO_SSH/configurations.git
-    $GIT clone $GIT_REPO_SSH/bash_scripting.git
-    $GIT clone $GIT_REPO_SSH/howtos.git
-}
-
-git_clone_base_repos()
-{
-    $CD $HOME
-
-    $GIT clone $GIT_REPO_HTTPS/configurations.git
-    $GIT clone $GIT_REPO_HTTPS/bash_scripting.git
-    $GIT clone $GIT_REPO_HTTPS/howtos.git
-}
-
-git_remove_base_repos()
-{
-    $RM $HOME/configurations
-    $RM $HOME/howtos
-    $RM $HOME/bash_scripting
-}
-
-#   -------------------------------
 #   SERVICE FUNCTIONS
 #   -------------------------------
 
@@ -115,14 +86,19 @@ setup_terminator()
     $LN $HOME/configurations/terminator/config $HOME/.config/terminator/
 }
 
-# install vscode configuration
-setup_vscode()
+function setup_vscode()
 {
-    $ECHO "\t- Install the 'Settings Sync' extension\n"
-    $ECHO "\t- Insert the Github Token ID (find token ID in KeepPass DB)\n"
-    $ECHO "\t- Insert the Github Gist ID:\n"
-    $ECHO "\t\t 9dd6c13d536fe315e07155b55d82e39d\n"
-    $ECHO "\t- Type: 'alt' + 'shift' + 'u'\n"
+    $ECHO
+    $ECHO "###############################################################"
+    $ECHO "From Visual Studio:"
+    $ECHO "\t1) install the 'Settings Sync' extension"
+    $ECHO "\t2) go to 'Settings Sync' settings"
+    $ECHO "\t3) insert the Github Token ID"
+    $ECHO -n "\t4) insert the Github Gist ID (HOME settings): "
+    $ECHO "76cd25491e9973d3857ea8842302560e"
+    $ECHO "\t5) type: 'alt' + 'shift' + 'u' to syncronise settings"
+    $ECHO "###############################################################"
+    $ECHO
 }
 
 function setup_ssh()
@@ -205,27 +181,3 @@ start_minidlna_as_local_user()
     #To autostart it at login, add the previous line to ~/.bash_profile
 }
 
-function git_change_remotes_to_ssh()
-{
-    local folders=($CONFIGURATIONS_DIR $HOWTOS_DIR $BASHSCRIPTING_DIR)
-    local repos=($GIT_REPO_SSH/configurations.git $GIT_REPO_SSH/howtos.git $GIT_REPO_SSH/bash_scripting.git)
-    local size=${#folders[@]}
-
-    for (( i = 0; i < ${size}; i++ ))
-    do
-        if [ -d ${folders[i]} ]
-        then
-            $CD ${folders[i]} &> /dev/null
-            $GIT remote set-url origin ${repos[i]}
-        fi
-    done
-}
-
-#   -------------------------------
-#   INSTALL FUNCTIONS
-#   -------------------------------
-
-git_install()
-{
-    $INSTALL git
-}

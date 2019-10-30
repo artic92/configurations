@@ -5,53 +5,82 @@
 #           written by Antonio Riccio              #
 #          antonio.riccio.27@gmail.com             #
 #                                                  #
-# Configures all the setting required by a basic   #
-#      installing of Linux (git, vim, vscode, etc) #
-# This script works for either Linux and MacOs     #
-# Tested on Xubuntu-1904                           #
+#  Installs the basic software required for a      #
+#  Linux workstation                               #
+#  ----------------------------------------------- #
+#  Tested on Xubuntu-1804-LTS and macOS            #
+#  ----------------------------------------------- #
 ####################################################
 
 source library.sh
 
 ###################################################
-#  DEBUG CONFIGURATION
+#  manual settings
 ###################################################
+CONFIGURE_GIT=1
+CONFIGURE_VIM=1
+CONFIGURE_BASH=1
+CONFIGURE_SSH=1
+CONFIGURE_GDB=1
+CONFIGURE_TERMINATOR=1
+CONFIGURE_FILEZILLA=1
+CONFIGURE_GO=1
+CONFIGURE_VSCODE=1
 
-set -x
+####################################################
+#  MAIN script starts here
+####################################################
 
-# write debug output to command.txt
-# exec 5> command.txt
-# BASH_XTRACEFD="5"
+if [[ $CONFIGURE_GIT -eq 1 ]]; then
+    $ECHO -n "configuring git..."
+    setup_git > /dev/null &&
+    $ECHO "DONE"
+fi
 
-###################################################
-#  MAIN STARTS HERE
-###################################################
+if [[ $CONFIGURE_VIM -eq 1 ]]; then
+    $ECHO -n "configuring vim..."
+    setup_vim > /dev/null &&
+    $ECHO "DONE"
+fi
 
-$ECHO "\n[GIT] Installing git...\n"
-git_install
-$ECHO "\n[GIT] Configuring git...\n"
-setup_git
-$ECHO "\n[GIT] Installing repos\n"
-git_clone_base_repos
-git_change_remotes_to_ssh
-# $ECHO "\n[GIT] Installing repos (SSH)\n"
-# git_clone_base_repos_ssh
-# $ECHO "\n[GIT] Removing all repos!\n"
-#git_remove_repos
+if [[ $CONFIGURE_BASH -eq 1 ]]; then
+    $ECHO -n "configuring bash..."
+    setup_bash > /dev/null &&
+    $ECHO "DONE"
+fi
 
-$ECHO "[VIM] Configuring vim...\n"
-setup_vim
-$ECHO "[BASH] Configuring bash...\n"
-setup_bash
-$ECHO "[SSH] Configuring ssh...\n"
-setup_ssh
-$ECHO "[GDB] Configuring gdb...\n"
-setup_gdb
-$ECHO "[TERMINATOR] Configuring terminator...\n"
-setup_terminator
-$ECHO "[FILEZILLA] Configuring filezilla...\n"
-setup_filezilla
-$ECHO "[GO] Configuring go command...\n"
-setup_go
+if [[ $CONFIGURE_SSH -eq 1 ]]; then
+    $ECHO -n "configuring ssh..."
+    setup_ssh > /dev/null &&
+    $ECHO "DONE"
+fi
 
-setup_vscode
+if [[ $CONFIGURE_GDB -eq 1 ]]; then
+    $ECHO -n "configuring gdb..."
+    setup_gdb > /dev/null &&
+    $ECHO "DONE"
+fi
+
+if [[ $CONFIGURE_TERMINATOR -eq 1 ]]; then
+    $ECHO -n "configuring terminator..."
+    setup_terminator > /dev/null &&
+    $ECHO "DONE"
+fi
+
+if [[ $CONFIGURE_FILEZILLA -eq 1 ]]; then
+    $ECHO -n "configuring filezilla..."
+    setup_filezilla > /dev/null &&
+    $ECHO "DONE"
+fi
+
+if [[ $CONFIGURE_GO -eq 1 ]]; then
+    $ECHO -n "configuring go..."
+    setup_go > /dev/null &&
+    $ECHO "DONE"
+fi
+
+if [[ $CONFIGURE_VSCODE -eq 1 ]]; then
+    $ECHO -n "configuring visual studio..."
+    $ECHO "DONE"
+    setup_vscode
+fi
