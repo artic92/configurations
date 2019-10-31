@@ -38,19 +38,19 @@ alias .5='cd ../../../../../'               # Go back 5 directory levels
 alias .6='cd ../../../../../../'            # Go back 6 directory levels
 
 
-alias c='clear'                             # c:            Clear terminal display
-alias which='type -all'                     # which:        Find executables
-alias show_options='shopt'                  # Show_options: display bash options settings
-alias fix_stty='stty sane'                  # fix_stty:     Restore terminal settings when screwed up
-alias edit='code'                           # edit:         Opens any file in visual code editor
-alias path='echo -e ${PATH//:/\\n}'         # path:         Echo all executable Paths
-alias cic='set completion-ignore-case On'   # cic:          Make tab-completion case-insensitive
-mcd () { mkdir -p "$1" && cd "$1"; }        # mcd:          Makes new Dir and jumps inside
-source $HOME/configurations/go_command.sh   # go:	        Move faster between directories
+alias c='clear'                                # c:            Clear terminal display
+alias which='type -all'                        # which:        Find executables
+alias show_options='shopt'                     # Show_options: display bash options settings
+alias fix_stty='stty sane'                     # fix_stty:     Restore terminal settings when screwed up
+alias edit='code'                              # edit:         Opens any file in visual code editor
+alias path='echo -e ${PATH//:/\\n}'            # path:         Echo all executable Paths
+alias cic='set completion-ignore-case On'      # cic:          Make tab-completion case-insensitive
+mcd () { mkdir -p "$1" && cd "$1"; }           # mcd:          Makes new Dir and jumps inside
+source $HOME/configurations/go/go_command.sh   # go:	       Move faster between directories
 
-alias f='open -a Finder ./'                 # f:            Opens current directory in MacOS Finder
-alias DT='tee ~/Desktop/terminalOut.txt'    # DT:           Pipe content to file on MacOS Desktop
-ql () { qlmanage -p "$*" >& /dev/null; }    # ql:           Opens any file in MacOS Quicklook Preview
+alias f='open -a Finder ./'                    # f:            Opens current directory in MacOS Finder
+alias DT='tee ~/Desktop/terminalOut.txt'       # DT:           Pipe content to file on MacOS Desktop
+ql () { qlmanage -p "$*" >& /dev/null; }       # ql:           Opens any file in MacOS Quicklook Preview
 if [[ "$OSTYPE" == "linux-gnu" ]];
 then
     trash () { command mv "$@" ~/.local/share/Trash/files/ ; }     # trash:        Moves a file to the Linux trash
