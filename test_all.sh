@@ -193,6 +193,23 @@ function test_setup_go()
     fi
 }
 
+function test_set_current_user_as_sudo()
+{
+    $ECHO -n "test set_current_user_as_sudo..."
+
+    if [[ $SELF_CONTAINED_TESTS -eq 1 ]]; then
+        set_current_user_as_sudo &> /dev/null
+    fi
+
+    if groups | grep "\<sudo\>" &> /dev/null; then
+        $ECHO "PASSED"
+        ((++test_passed))
+    else
+        $ECHO "FAILED"
+        ((test_failed++))
+    fi
+}
+
 ###################################################
 #  MAIN script starts here
 ###################################################
@@ -209,6 +226,7 @@ test_setup_ssh
 test_setup_terminator
 test_setup_filezilla
 test_setup_go
+test_set_current_user_as_sudo
 
 echo -e "\nSUMMARY"
 echo -e "\ttests passed: $test_passed"

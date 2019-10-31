@@ -26,6 +26,7 @@ CONFIGURE_TERMINATOR=1
 CONFIGURE_FILEZILLA=1
 CONFIGURE_GO=1
 CONFIGURE_VSCODE=1
+CONFIGURE_THIS_USER_AS_SUDO=0
 
 ####################################################
 #  MAIN script starts here
@@ -83,4 +84,10 @@ if [[ $CONFIGURE_VSCODE -eq 1 ]]; then
     $ECHO -n "configuring visual studio..."
     $ECHO "DONE"
     setup_vscode
+fi
+
+if [[ $CONFIGURE_THIS_USER_AS_SUDO -eq 1 ]]; then
+    $ECHO -n "configuring this user as sudo..."
+    set_current_user_as_sudo > /dev/null &&
+    $ECHO "DONE"
 fi

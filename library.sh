@@ -167,3 +167,7 @@ function start_minidlna_as_local_user()
     #To autostart it at login, add the previous line to ~/.bash_profile
 }
 
+function set_current_user_as_sudo()
+{
+    $SUDO usermod -aG sudo "$USER"
+}
