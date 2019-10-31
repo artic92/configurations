@@ -70,8 +70,6 @@ function setup_ssh()
         $MKDIR "$SSH_DIR"
     fi
 
-    $LN "$CONFIGURATIONS_DIR"/ssh/known_hosts "$SSH_DIR"/known_hosts
-
     if [[ "$OSTYPE" == "darwin"* ]]; then
         $LN "$CONFIGURATIONS_DIR"/ssh/macos/config "$SSH_DIR"/config
     fi
