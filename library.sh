@@ -61,6 +61,8 @@ function setup_bash()
     fi
 
     $LN "$CONFIGURATIONS_DIR"/bash/.bashrc "$HOME/.$bash_link_name"
+
+    # shellcheck source=/dev/null
     source "$HOME/.$bash_link_name"
 }
 
