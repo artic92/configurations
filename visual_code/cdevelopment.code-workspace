@@ -9,21 +9,24 @@
 			"path": "../../howtos"
 		},
 		{
-			"name": "c_codebase",
-			"path": "../../c_codebase"
-		},
-		{
-			"name": "linux",
-			"path": "../../linux"
-		},
-		{
-			"name": "examples",
+			"name": "generalCexamples",
 			"path": "../../examples"
 		},
 		{
-			"name": "network",
+			"name": "anotherCexample(evtest)",
+			"path": "../../evtest"
+		},
+		{
+			"name": "networkExamples",
 			"path": "../../network"
-		}
+		},
+		{
+			"name": "theLinuxProgrammingInterface",
+			"path": "../../professional_enhancement/books/linux/The.Linux.Programming.Interface-190406-code-samples/tlpi-dist"
+		},
+		{
+			"name": "c_codebase",
+			"path": "../../c_codebase"
+		},
 	],
-	"settings": {}
 }
