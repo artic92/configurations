@@ -166,6 +166,60 @@
       profile = default
       type = Terminal
       uuid = adba9f96-225e-41fd-800f-b6ce3c6fb4f2
+  [[testing]]
+    [[[child0]]]
+      fullscreen = False
+      last_active_term = 789468b0-afeb-4532-a3ea-b915b5c444ee
+      last_active_window = True
+      maximised = True
+      order = 0
+      parent = ""
+      position = 1080:33
+      size = 1920, 969
+      title = ariccio@pktariccio: ~
+      type = Window
+    [[[child1]]]
+      order = 0
+      parent = child0
+      position = 472
+      ratio = 0.489626556017
+      type = VPaned
+    [[[child2]]]
+      order = 0
+      parent = child1
+      position = 225
+      ratio = 0.481798715203
+      type = VPaned
+    [[[child5]]]
+      order = 1
+      parent = child1
+      position = 223
+      ratio = 0.454175152749
+      type = VPaned
+    [[[terminal3]]]
+      order = 0
+      parent = child2
+      profile = default
+      type = Terminal
+      uuid = f88816ec-2d98-4de7-90ea-52036b86cabd
+    [[[terminal4]]]
+      order = 1
+      parent = child2
+      profile = default
+      type = Terminal
+      uuid = 789468b0-afeb-4532-a3ea-b915b5c444ee
+    [[[terminal6]]]
+      order = 0
+      parent = child5
+      profile = default
+      type = Terminal
+      uuid = 03f1c295-3c3e-4658-a024-989985b4d32a
+    [[[terminal7]]]
+      order = 1
+      parent = child5
+      profile = default
+      type = Terminal
+      uuid = 0566cfd9-8f3b-4d87-b36b-4710cb2a913d
   [[ueapi]]
     [[[child0]]]
       fullscreen = False
