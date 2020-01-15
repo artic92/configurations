@@ -27,6 +27,8 @@ CONFIGURE_FILEZILLA=1
 CONFIGURE_GO=1
 CONFIGURE_VSCODE=1
 CONFIGURE_THIS_USER_AS_SUDO=0
+CONFIGURE_XFCE=1
+BACKUP_XFCE_FILES=1
 
 ####################################################
 #  MAIN script starts here
@@ -89,5 +91,17 @@ fi
 if [[ $CONFIGURE_THIS_USER_AS_SUDO -eq 1 ]]; then
     $ECHO -n "configuring this user as sudo..."
     set_current_user_as_sudo > /dev/null &&
+    $ECHO "DONE"
+fi
+
+if [[ $CONFIGURE_XFCE -eq 1 ]]; then
+    $ECHO -n "configuring xfce environment..."
+    setup_xfce &> /dev/null &&
+    $ECHO "DONE"
+fi
+
+if [[ $BACKUP_XFCE_FILES -eq 1 ]]; then
+    $ECHO -n "refreshing xfce folder..."
+    xfce_backup_config_files &> /dev/null &&
     $ECHO "DONE"
 fi

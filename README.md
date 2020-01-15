@@ -14,8 +14,8 @@ So far, the repo contains configuration files for following software:
 * terminator
 * filezilla
 * go
-* minidlna
 * iterm2 (macOS)
+* xfce environment
 
 `go` is a simple utility which creates labeled shortcuts to most used filesystem paths. Use the command `gset` to store the actual folder as shortcut by assigning a label. You can later remove that shortcut with the `gunset` command.
 
@@ -70,6 +70,14 @@ The `install.sh` script is configurable through a set of variables. So far, the 
 `CONFIGURE_VSCODE`
 
 * This variable controls configuration of `Microsoft Visual Studio Code`. A value of `0` means the configuration is not installed.
+
+`CONFIGURE_THIS_USER_AS_SUDO`
+
+* This variable controls allow the current user to use the `sudo` command. A value of `0` means the configuration is not applied.
+
+`CONFIGURE_XFCE`
+
+* This variable controls configuration of the `xfce` environment. A value of `0` means the configuration is not installed.
 
 ## Contributing
 

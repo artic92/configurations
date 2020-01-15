@@ -1,0 +1,25 @@
+code -n
+code -n $HOME/configurations/visual_code/bashdevelopment.code-workspace
+code -n $HOME/configurations/visual_code/cdevelopment.code-workspace
+code -n $HOME/configurations/visual_code/professionalprofile.code-workspace
+code -n $HOME/configurations/visual_code/gitbaserepos.code-workspace
+code -n $HOME/configurations/visual_code/linuxkapidevelopment.code-workspace
+code -n $HOME/
+code -n $HOME/configurations/
+code -n $HOME/howtos/
+code -n $HOME/bash_scripting/
+code -n $HOME/c_codebase/
+code -n $HOME/ariccio_cv/
+code -n $HOME/cover_letter/
+code -n $HOME/linkedin_profile/
+code -n $HOME/awesome-cheatsheets/
+code -n $HOME/standard-readme/
+code -n $HOME/gitignore/
+code -n $HOME/ldd3/
+code -n $HOME/linux/
+modelio-open-source3.8
+terminator -l repos
+virtualbox
+gparted
+reboot
+xfce4-session-logout -l

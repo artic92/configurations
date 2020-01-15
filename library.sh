@@ -8,7 +8,8 @@ CP='cp -r'
 LN='ln -sf'
 RM='rm -rf'
 CD=cd
-MKDIR=mkdir
+MKDIR='mkdir -p'
+LS=ls
 CHMOD=chmod
 GIT=git
 SUDO=sudo
@@ -172,4 +173,42 @@ function start_minidlna_as_local_user()
 function set_current_user_as_sudo()
 {
     $SUDO usermod -aG sudo "$USER"
+}
+
+function xfce_backup_config_files()
+{
+    local xfce4_config_folder=$HOME/.config/xfce4
+    local xfce4_cache_folder=$HOME/.cache/xfce4
+    local config_xfce_dir=$CONFIGURATIONS_DIR/xfce4
+
+    if [[ "$OSTYPE" == "linux-gnu" ]]; then
+        # NOTE: cp command automatically creates the target if not existing
+        $CP "$xfce4_config_folder"/panel/ "$config_xfce_dir"/
+        $CP "$xfce4_config_folder"/terminal/ "$config_xfce_dir"/
+        $CP "$xfce4_config_folder"/xfconf/ "$config_xfce_dir"/
+
+        # using plain cp to skip folders (already copied by the previous commands)
+        # using also unaliased version obtained by prefixing a \ to the command (option '-i' prompts for overwriting)
+        # for more details: https://stackoverflow.com/questions/8488253/how-to-force-cp-to-overwrite-without-confirmation
+        \cp -f "$xfce4_config_folder"/* "$config_xfce_dir"
+
+        $CP "$xfce4_cache_folder"/xfce4-appfinder/ "$config_xfce_dir"/
+    fi
+}
+
+function setup_xfce()
+{
+    local xfce4_config_folder=$HOME/.config/xfce4
+    local xfce4_cache_folder=$HOME/.cache/xfce4
+    local config_xfce_dir=$CONFIGURATIONS_DIR/xfce4
+
+    if [[ "$OSTYPE" == "linux-gnu" ]]; then
+        $RM "$xfce4_config_folder"/panel
+        $RM "$xfce4_config_folder"/terminal
+        $RM "$xfce4_config_folder"/xfconf
+        $RM "$xfce4_cache_folder"/xfce4-appfinder
+
+        $LN "$config_xfce_dir"/* "$xfce4_config_folder"/
+        $LN "$config_xfce_dir"/xfce4-appfinder "$xfce4_cache_folder"/
+    fi
 }

@@ -210,6 +210,31 @@ function test_set_current_user_as_sudo()
     fi
 }
 
+function test_setup_xfce()
+{
+    local xfce4_config_folder=$HOME/.config/xfce4
+    local xfce4_cache_folder=$HOME/.cache/xfce4
+    local folders=("$xfce4_config_folder"/panel "$xfce4_config_folder"/terminal "$xfce4_config_folder"/xfconf "$xfce4_cache_folder"/xfce4-appfinder)
+    local size=${#folders[@]}
+
+    $ECHO -n "test setup_xfce..."
+
+    if [[ $SELF_CONTAINED_TESTS -eq 1 ]]; then
+        setup_xfce &> /dev/null
+    fi
+
+    for (( i = 0; i < size; i++ )); do
+        if [ ! -d "${folders[i]}" ]; then
+            $ECHO "FAILED"
+            ((test_failed++))
+            return
+        fi
+    done
+
+    $ECHO "PASSED"
+    ((++test_passed))
+}
+
 ###################################################
 #  MAIN script starts here
 ###################################################
@@ -227,6 +252,7 @@ test_setup_terminator
 test_setup_filezilla
 test_setup_go
 test_set_current_user_as_sudo
+test_setup_xfce
 
 echo -e "\nSUMMARY"
 echo -e "\ttests passed: $test_passed"
