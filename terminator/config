@@ -105,6 +105,54 @@
       profile = default
       type = Terminal
       uuid = adba9f96-225e-41fd-800f-b6ce3c6fb4f2
+  [[atgprocmgrdev]]
+    [[[child0]]]
+      fullscreen = False
+      last_active_term = 0b7a8cd6-d275-48b7-9999-d94a8de23ccc
+      last_active_window = True
+      maximised = True
+      order = 0
+      parent = ""
+      position = 1080:33
+      size = 1920, 969
+      title = ariccio@pktariccio: ~
+      type = Window
+    [[[child1]]]
+      order = 0
+      parent = child0
+      position = 771
+      ratio = 0.79979253112
+      type = VPaned
+    [[[child2]]]
+      order = 0
+      parent = child1
+      position = 1383
+      ratio = 0.722193211488
+      type = HPaned
+    [[[terminal3]]]
+      command = ./run.sh; bash
+      directory = /home/ariccio/dockerbuildenv
+      order = 0
+      parent = child2
+      profile = default
+      type = Terminal
+      uuid = 0b7a8cd6-d275-48b7-9999-d94a8de23ccc
+    [[[terminal4]]]
+      command = ./run.sh; bash
+      directory = /home/ariccio/dockerbuildenv
+      order = 1
+      parent = child2
+      profile = default
+      type = Terminal
+      uuid = 0689aee3-c1c8-405e-9af2-c42fd307d600
+    [[[terminal5]]]
+      command = ""
+      directory = /home/ariccio/docker-work/synergy/apps/build/test-board
+      order = 1
+      parent = child1
+      profile = default
+      type = Terminal
+      uuid = 3352d3ca-f7d7-4f1d-8ae4-f665bb972632
   [[dmdev]]
     [[[child0]]]
       fullscreen = False
