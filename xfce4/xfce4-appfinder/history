@@ -5,13 +5,12 @@ code -n $HOME/configurations/visual_code/professionalprofile.code-workspace
 code -n $HOME/configurations/visual_code/gitbaserepos.code-workspace
 code -n $HOME/configurations/visual_code/linuxkapidevelopment.code-workspace
 code -n $HOME/
+code -n $HOME/docker-work/synergy
+code -n $HOME/docker-work/synergy/apps/board/targetos
 code -n $HOME/configurations/
 code -n $HOME/howtos/
 code -n $HOME/bash_scripting/
 code -n $HOME/c_codebase/
-code -n $HOME/ariccio_cv/
-code -n $HOME/cover_letter/
-code -n $HOME/linkedin_profile/
 code -n $HOME/awesome-cheatsheets/
 code -n $HOME/standard-readme/
 code -n $HOME/gitignore/
@@ -19,6 +18,13 @@ code -n $HOME/ldd3/
 code -n $HOME/linux/
 modelio-open-source3.8
 terminator -l repos
+terminator -l dmdev
+terminator -l antennadev
+terminator -l atgprocmgrdev
+terminator -l ueapi
+terminator -l ueapid
+terminator -l ueapilogs
+terminator -l testing
 virtualbox
 gparted
 reboot
