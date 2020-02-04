@@ -16,6 +16,7 @@ So far, the repo contains configuration files for following software:
 * go
 * iterm2 (macOS)
 * xfce environment
+* teamviewer
 
 `go` is a simple utility which creates labeled shortcuts to most used filesystem paths. Use the command `gset` to store the actual folder as shortcut by assigning a label. You can later remove that shortcut with the `gunset` command.
 
@@ -78,6 +79,10 @@ The `install.sh` script is configurable through a set of variables. So far, the 
 `CONFIGURE_XFCE`
 
 * This variable controls configuration of the `xfce` environment. A value of `0` means the configuration is not installed.
+
+`CONFIGURE_TEAMVIEWER`
+
+* This variable controls configuration of `teamviewer`. A value of `0` means the configuration is not installed.
 
 ## Contributing
 

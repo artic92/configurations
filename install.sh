@@ -12,6 +12,7 @@
 #  ----------------------------------------------- #
 ####################################################
 
+# shellcheck source=/dev/null
 source library.sh
 
 ###################################################
@@ -28,7 +29,7 @@ CONFIGURE_GO=1
 CONFIGURE_VSCODE=1
 CONFIGURE_THIS_USER_AS_SUDO=0
 CONFIGURE_XFCE=1
-BACKUP_XFCE_FILES=1
+CONFIGURE_TEAMVIEWER=1
 
 ####################################################
 #  MAIN script starts here
@@ -100,8 +101,8 @@ if [[ $CONFIGURE_XFCE -eq 1 ]]; then
     $ECHO "DONE"
 fi
 
-if [[ $BACKUP_XFCE_FILES -eq 1 ]]; then
-    $ECHO -n "refreshing xfce folder..."
-    xfce_backup_config_files &> /dev/null &&
+if [[ $CONFIGURE_TEAMVIEWER -eq 1 ]]; then
+    $ECHO -n "configuring teamviewer..."
+    setup_teamviewer &> /dev/null &&
     $ECHO "DONE"
 fi

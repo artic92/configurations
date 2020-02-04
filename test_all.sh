@@ -1,5 +1,7 @@
 #!/bin/bash
 
+PROGNAME="$(basename "$0")"
+
 # if set, the functions-under-test are actually called inside each test_* function
 SELF_CONTAINED_TESTS=0
 
@@ -235,9 +237,62 @@ function test_setup_xfce()
     ((++test_passed))
 }
 
+function test_setup_teamviewer()
+{
+    source "$HOME"/configurations/library.sh
+    local file_to_test="$HOME"/.config/teamviewer/client.conf
+
+    $ECHO -n "test setup_teamviewer..."
+
+    if [[ $SELF_CONTAINED_TESTS -eq 1 ]]; then
+        setup_teamviewer &> /dev/null
+    fi
+
+    if [[ ! -L $file_to_test ]]; then
+        $ECHO "FAILED"
+        ((test_failed++))
+    elif [[ ! -s $file_to_test ]]; then
+        $ECHO "FAILED"
+        ((test_failed++))
+    else
+        $ECHO "PASSED"
+        ((++test_passed))
+    fi
+}
+
+function usage()
+{
+    echo "Usage:  $PROGNAME [ options ]"
+    echo ""
+    echo "Options:"
+    echo "          --standalone ........ runs tests in stand-alone mode"
+    echo "  -h    | --help .............. this message"
+    echo
+}
+
 ###################################################
 #  MAIN script starts here
 ###################################################
+
+GETOPT_ARGS=$(getopt -o h -l standalone,help -n "$PROGNAME" -- "$@") || exit 1
+eval set -- "$GETOPT_ARGS"
+
+while :; do
+    case $1 in
+        --standalone)
+            shift
+            SELF_CONTAINED_TESTS=1
+            ;;
+        -h | --help)
+            usage
+            exit 0
+            ;;
+        --)
+            shift
+            break
+            ;;
+    esac
+done
 
 if [[ $SELF_CONTAINED_TESTS -eq 1 ]]; then
  echo -e "tests in stand-alone mode...\n"
@@ -253,6 +308,7 @@ test_setup_filezilla
 test_setup_go
 test_set_current_user_as_sudo
 test_setup_xfce
+test_setup_teamviewer
 
 echo -e "\nSUMMARY"
 echo -e "\ttests passed: $test_passed"

@@ -105,6 +105,7 @@ function setup_terminator()
     if [[ ! -d $terminator_target_dir ]]; then
         $MKDIR "$terminator_target_dir"
     fi
+
     $LN "$CONFIGURATIONS_DIR"/terminator/config "$terminator_target_dir"/
 }
 
@@ -210,5 +211,31 @@ function setup_xfce()
 
         $LN "$config_xfce_dir"/* "$xfce4_config_folder"/
         $LN "$config_xfce_dir"/xfce4-appfinder "$xfce4_cache_folder"/
+    fi
+}
+
+function teamviewer_backup_conf_files()
+{
+    local teamviewer_config_dir=$HOME/.config/teamviewer
+    local configurations_teamviewer_dir=$CONFIGURATIONS_DIR/teamviewer
+
+    if [[ "$OSTYPE" == "linux-gnu" ]]; then
+        $CP "$teamviewer_config_dir"/client.conf "$configurations_teamviewer_dir"
+    fi
+}
+
+function setup_teamviewer()
+{
+    local teamviewer_config_dir=$HOME/.config/teamviewer
+    local configurations_teamviewer_dir=$CONFIGURATIONS_DIR/teamviewer
+
+    if [[ "$OSTYPE" == "linux-gnu" ]]; then
+        $RM "$teamviewer_config_dir"/client.conf
+
+        if [[ ! -d $teamviewer_config_dir ]]; then
+            $MKDIR "$teamviewer_config_dir"
+        fi
+
+        $LN "$configurations_teamviewer_dir"/client.conf "$teamviewer_config_dir"/
     fi
 }
