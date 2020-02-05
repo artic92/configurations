@@ -1,4 +1,7 @@
 code -n
+code -n $HOME/configurations/visual_code/airspan.code-workspace
+code -n $HOME/configurations/visual_code/bridgingethwlan.code-workspace
+code -n $HOME/configurations/visual_code/gctuetestddevel.code-workspace
 code -n $HOME/configurations/visual_code/bashdevelopment.code-workspace
 code -n $HOME/configurations/visual_code/cdevelopment.code-workspace
 code -n $HOME/configurations/visual_code/professionalprofile.code-workspace
