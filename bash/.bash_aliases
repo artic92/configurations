@@ -274,3 +274,7 @@ alias showBlocked='sudo ipfw list'                  # showBlocked:  All ipfw rul
 #   cpid2pi:  Copy the SSH key to the setupPC $1
 #   -----------------------------------------------------------------------------------
     cpid2pi () { ssh-copy-id airspan@10.21.0."$1"; }
+
+#   crdev:  SSH the crdev PC
+#   -----------------------------------------------------------------------------------
+    alias crdev="ssh crdev@10.21.0.99"
