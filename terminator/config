@@ -147,7 +147,7 @@
       uuid = 0689aee3-c1c8-405e-9af2-c42fd307d600
     [[[terminal5]]]
       command = ""
-      directory = /home/ariccio/docker-work/synergy/apps/build/test-board
+      directory = /home/ariccio/docker-work/synergy/scripts/simulation/atg
       order = 1
       parent = child1
       profile = default
