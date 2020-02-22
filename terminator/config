@@ -44,6 +44,51 @@
       profile = default
       type = Terminal
       uuid = adba9f96-225e-41fd-800f-b6ce3c6fb4f2
+  [[profprofile]]
+    [[[child0]]]
+      fullscreen = False
+      last_active_term = 0b7a8cd6-d275-48b7-9999-d94a8de23ccc
+      last_active_window = True
+      maximised = True
+      order = 0
+      parent = ""
+      position = 0:33
+      size = 1920, 1089
+      title = ariccio@pktariccio: ~
+      type = Window
+    [[[child1]]]
+      order = 0
+      parent = child0
+      position = 1056
+      ratio = 0.551436031332
+      type = HPaned
+    [[[child3]]]
+      order = 1
+      parent = child1
+      position = 499
+      ratio = 0.460332103321
+      type = VPaned
+    [[[terminal2]]]
+      directory = /home/ariccio/linkedin_profile
+      order = 0
+      parent = child1
+      profile = default
+      type = Terminal
+      uuid = 0b7a8cd6-d275-48b7-9999-d94a8de23ccc
+    [[[terminal4]]]
+      directory = /home/ariccio/ariccio_cv
+      order = 0
+      parent = child3
+      profile = default
+      type = Terminal
+      uuid = f88816ec-2d98-4de7-90ea-52036b86cabd
+    [[[terminal5]]]
+      directory = /home/ariccio/cover_letter
+      order = 1
+      parent = child3
+      profile = default
+      type = Terminal
+      uuid = adba9f96-225e-41fd-800f-b6ce3c6fb4f2
   [[repos]]
     [[[child0]]]
       fullscreen = False

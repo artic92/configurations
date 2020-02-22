@@ -19,6 +19,7 @@ code -n $HOME/ldd3/
 code -n $HOME/linux/
 modelio-open-source3.8
 terminator -l repos
+terminator -l profprofile
 virtualbox
 gparted
 reboot
