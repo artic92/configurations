@@ -1,0 +1,15 @@
+[Desktop Entry]
+X-SnapInstanceName=keepassxc
+Name=KeePassXC
+GenericName=Password Manager
+Comment=Community-driven port of the Windows application “KeePass Password Safe”
+Exec=env BAMF_DESKTOP_FILE_HINT=/var/lib/snapd/desktop/applications/keepassxc_keepassxc.desktop /snap/bin/keepassxc %f
+Icon=/snap/keepassxc/784/usr/share/icons/hicolor/256x256/apps/keepassxc.png
+StartupWMClass=keepassxc
+StartupNotify=true
+Terminal=false
+Type=Application
+Version=1.0
+Categories=Utility;Security;Qt;
+MimeType=application/x-keepass2;
+X-XFCE-Source=file:///var/lib/snapd/desktop/applications/keepassxc_keepassxc.desktop

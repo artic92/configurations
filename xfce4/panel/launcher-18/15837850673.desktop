@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=balenaEtcher
+Exec=/opt/balenaEtcher/balena-etcher-electron %U
+Terminal=false
+Type=Application
+Icon=balena-etcher-electron
+StartupWMClass=balenaEtcher
+Comment=Flash OS images to SD cards and USB drives, safely and easily.
+Categories=Utility;
+X-XFCE-Source=file:///usr/share/applications/balena-etcher-electron.desktop

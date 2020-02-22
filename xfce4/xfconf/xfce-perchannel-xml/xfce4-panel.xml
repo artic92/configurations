@@ -40,12 +40,27 @@
       <property name="plugin-ids" type="array">
         <value type="int" value="7"/>
         <value type="int" value="8"/>
-        <value type="int" value="9"/>
-        <value type="int" value="10"/>
+        <value type="int" value="16"/>
         <value type="int" value="11"/>
-        <value type="int" value="12"/>
+        <value type="int" value="22"/>
+        <value type="int" value="36"/>
+        <value type="int" value="5"/>
+        <value type="int" value="29"/>
         <value type="int" value="13"/>
-        <value type="int" value="14"/>
+        <value type="int" value="42"/>
+        <value type="int" value="25"/>
+        <value type="int" value="37"/>
+        <value type="int" value="31"/>
+        <value type="int" value="12"/>
+        <value type="int" value="18"/>
+        <value type="int" value="28"/>
+        <value type="int" value="10"/>
+        <value type="int" value="43"/>
+        <value type="int" value="9"/>
+        <value type="int" value="38"/>
+        <value type="int" value="39"/>
+        <value type="int" value="41"/>
+        <value type="int" value="40"/>
       </property>
       <property name="span-monitors" type="bool" value="false"/>
       <property name="mode" type="uint" value="0"/>
@@ -72,6 +87,7 @@
         <value type="string" value="xfce4-power-manager"/>
         <value type="string" value="teamviewer"/>
         <value type="string" value="dropbox"/>
+        <value type="string" value="whatsdesk"/>
       </property>
     </property>
     <property name="plugin-7" type="string" value="showdesktop"/>
@@ -93,16 +109,8 @@
         <value type="string" value="15660416853.desktop"/>
       </property>
     </property>
-    <property name="plugin-12" type="string" value="launcher">
-      <property name="items" type="array">
-        <value type="string" value="15660416854.desktop"/>
-      </property>
-    </property>
     <property name="plugin-13" type="string" value="separator">
       <property name="style" type="uint" value="1"/>
-    </property>
-    <property name="plugin-14" type="string" value="directorymenu">
-      <property name="base-directory" type="string" value="/home/home/ariccio"/>
     </property>
     <property name="plugin-17" type="string" value="cpugraph"/>
     <property name="plugin-19" type="string" value="xkb"/>
@@ -111,6 +119,7 @@
     <property name="plugin-23" type="string" value="power-manager-plugin"/>
     <property name="plugin-24" type="string" value="pulseaudio">
       <property name="enable-keyboard-shortcuts" type="bool" value="true"/>
+      <property name="mpris-players" type="string" value="chromium.instance1909;chromium.instance1958;chromium.instance2169;chromium.instance2206;chromium.instance2996;chromium.instance3253;chromium.instance3959;chromium.instance4303;chromium.instance4639;chromium.instance5635;spotify"/>
     </property>
     <property name="plugin-26" type="string" value="screenshooter"/>
     <property name="plugin-27" type="string" value="showdesktop"/>
@@ -126,5 +135,82 @@
       <property name="expand" type="bool" value="false"/>
     </property>
     <property name="plugin-35" type="string" value="xfce4-orageclock-plugin"/>
+    <property name="plugin-5" type="string" value="launcher">
+      <property name="items" type="array">
+        <value type="string" value="15837848451.desktop"/>
+      </property>
+    </property>
+    <property name="plugin-16" type="string" value="launcher">
+      <property name="items" type="array">
+        <value type="string" value="15837849692.desktop"/>
+      </property>
+    </property>
+    <property name="plugin-18" type="string" value="launcher">
+      <property name="items" type="array">
+        <value type="string" value="15837850673.desktop"/>
+      </property>
+    </property>
+    <property name="plugin-22" type="string" value="launcher">
+      <property name="items" type="array">
+        <value type="string" value="15897124131.desktop"/>
+      </property>
+    </property>
+    <property name="plugin-25" type="string" value="launcher">
+      <property name="items" type="array">
+        <value type="string" value="15837851005.desktop"/>
+      </property>
+    </property>
+    <property name="plugin-28" type="string" value="launcher">
+      <property name="items" type="array">
+        <value type="string" value="15837851176.desktop"/>
+      </property>
+    </property>
+    <property name="plugin-29" type="string" value="launcher">
+      <property name="items" type="array">
+        <value type="string" value="15837851447.desktop"/>
+      </property>
+    </property>
+    <property name="plugin-31" type="string" value="launcher">
+      <property name="items" type="array">
+        <value type="string" value="15837851718.desktop"/>
+      </property>
+    </property>
+    <property name="plugin-36" type="string" value="separator"/>
+    <property name="plugin-37" type="string" value="launcher">
+      <property name="items" type="array">
+        <value type="string" value="15897135661.desktop"/>
+      </property>
+    </property>
+    <property name="plugin-38" type="string" value="launcher">
+      <property name="items" type="array">
+        <value type="string" value="15897136292.desktop"/>
+      </property>
+    </property>
+    <property name="plugin-39" type="string" value="launcher">
+      <property name="items" type="array">
+        <value type="string" value="15897136623.desktop"/>
+      </property>
+    </property>
+    <property name="plugin-40" type="string" value="launcher">
+      <property name="items" type="array">
+        <value type="string" value="15897136804.desktop"/>
+      </property>
+    </property>
+    <property name="plugin-41" type="string" value="launcher">
+      <property name="items" type="array">
+        <value type="string" value="15897136975.desktop"/>
+      </property>
+    </property>
+    <property name="plugin-42" type="string" value="launcher">
+      <property name="items" type="array">
+        <value type="string" value="15897137726.desktop"/>
+      </property>
+    </property>
+    <property name="plugin-43" type="string" value="separator"/>
+    <property name="plugin-12" type="string" value="launcher">
+      <property name="items" type="array">
+        <value type="string" value="15897142381.desktop"/>
+      </property>
+    </property>
   </property>
 </channel>

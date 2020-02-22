@@ -1,0 +1,12 @@
+[Desktop Entry]
+Type=Application
+Name=SpeedCrunch
+Name[en_GB]=SpeedCrunch
+Exec=speedcrunch
+Icon=speedcrunch
+Comment=A high-precision scientific calculator
+Comment[en_GB]=A high-precision scientific calculator
+Categories=Qt;Utility;Calculator;
+Keywords=arithmetic;calculation;math;scientific;
+Keywords[en_GB]=arithmetic;calculation;math;scientific;
+X-XFCE-Source=file:///usr/share/applications/speedcrunch.desktop

@@ -21,7 +21,7 @@
         <property name="image-show" type="empty"/>
         <property name="workspace0" type="empty">
           <property name="color-style" type="int" value="0"/>
-          <property name="image-style" type="int" value="4"/>
+          <property name="image-style" type="int" value="5"/>
           <property name="last-image" type="string" value="/home/ariccio/configurations/wallpapers/landscape/apollo_earth_from_moon.jpg"/>
           <property name="backdrop-cycle-enable" type="bool" value="true"/>
           <property name="backdrop-cycle-period" type="int" value="5"/>

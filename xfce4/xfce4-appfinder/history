@@ -1,27 +1,36 @@
+balena-etcher-electron
+chromium
 code -n
-code -n $HOME/configurations/visual_code/bashdevelopment.code-workspace
-code -n $HOME/configurations/visual_code/cdevelopment.code-workspace
-code -n $HOME/configurations/visual_code/professionalprofile.code-workspace
-code -n $HOME/configurations/visual_code/gitbaserepos.code-workspace
-code -n $HOME/configurations/visual_code/linuxkapidevelopment.code-workspace
 code -n $HOME/
-code -n $HOME/configurations/
-code -n $HOME/howtos/
+code -n $HOME/ariccio_cv/
+code -n $HOME/awesome-cheatsheets/
 code -n $HOME/bash_scripting/
 code -n $HOME/c_codebase/
-code -n $HOME/ariccio_cv/
+code -n $HOME/configurations/
+code -n $HOME/configurations/visual_code/bashdevelopment.code-workspace
+code -n $HOME/configurations/visual_code/cdevelopment.code-workspace
+code -n $HOME/configurations/visual_code/gitbaserepos.code-workspace
+code -n $HOME/configurations/visual_code/linuxkapidevelopment.code-workspace
+code -n $HOME/configurations/visual_code/professionalprofile.code-workspace
 code -n $HOME/cover_letter/
-code -n $HOME/linkedin_profile/
-code -n $HOME/awesome-cheatsheets/
-code -n $HOME/standard-readme/
+code -n $HOME/Dropbox/
+code -n $HOME/Dropbox/note/
 code -n $HOME/gitignore/
+code -n $HOME/howtos/
 code -n $HOME/ldd3/
+code -n $HOME/linkedin_profile/
 code -n $HOME/linux/
-modelio-open-source3.8
-terminator -l repos
-terminator -l profprofile
-virtualbox
+code -n $HOME/standard-readme/
 gparted
+keepassxc
+modelio-open-source4.0
+poweroff
 reboot
-xfce4-session-logout -l
+spotify
 teamviewer
+terminator -l profprofile
+terminator -l repos
+thunar
+virtualbox
+whatsdesk
+xfce4-session-logout -l
