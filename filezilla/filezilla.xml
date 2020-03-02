@@ -76,7 +76,7 @@
 		<Setting name="Show Tree Remote">1</Setting>
 		<Setting name="File Pane Layout">0</Setting>
 		<Setting name="File Pane Swap">0</Setting>
-		<Setting name="Last local directory">/home/</Setting>
+		<Setting name="Last local directory">/home/ariccio/Dropbox/</Setting>
 		<Setting name="Filelist directory sort">0</Setting>
 		<Setting name="Filelist name sort">1</Setting>
 		<Setting name="Queue successful autoclear">0</Setting>
@@ -101,7 +101,7 @@
 		<Setting name="Icon theme">default</Setting>
 		<Setting name="Icon scale">125</Setting>
 		<Setting name="Timestamp in message log">0</Setting>
-		<Setting name="Sitemanager last selected" />
+		<Setting name="Sitemanager last selected">0/remoteNAS</Setting>
 		<Setting name="Local filelist shown columns">1111</Setting>
 		<Setting name="Remote filelist shown columns">111111</Setting>
 		<Setting name="Local filelist column order">0,1,2,3</Setting>
@@ -110,7 +110,7 @@
 		<Setting name="Filter toggle state">0</Setting>
 		<Setting name="Show quickconnect bar">1</Setting>
 		<Setting name="Messagelog position">1</Setting>
-		<Setting name="Last connected site" />
+		<Setting name="Last connected site">0/remoteNAS</Setting>
 		<Setting name="File doubleclock action">0</Setting>
 		<Setting name="Dir doubleclock action">0</Setting>
 		<Setting name="Minimize to tray">0</Setting>
