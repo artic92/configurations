@@ -24,6 +24,7 @@ terminator -l repos
 terminator -l dmdev
 terminator -l antennadev
 terminator -l atgprocmgrdev
+terminator -l hostsim
 terminator -l ueapi
 terminator -l ueapid
 terminator -l ueapilogs

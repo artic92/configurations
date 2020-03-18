@@ -44,6 +44,53 @@
       profile = default
       type = Terminal
       uuid = 03f1c295-3c3e-4658-a024-989985b4d32a
+  [[hostsim]]
+    [[[child0]]]
+      fullscreen = False
+      last_active_term = 0b7a8cd6-d275-48b7-9999-d94a8de23ccc
+      last_active_window = True
+      maximised = True
+      order = 0
+      parent = ""
+      position = 1131:455
+      size = 1869, 1025
+      title = ariccio@pktariccio: ~
+      type = Window
+    [[[child1]]]
+      order = 0
+      parent = child0
+      position = 629
+      ratio = 0.337446351931
+      type = HPaned
+    [[[child3]]]
+      order = 1
+      parent = child1
+      position = 470
+      ratio = 0.460784313725
+      type = VPaned
+    [[[terminal2]]]
+      command = sleep 15; ./hostsim aru; bash
+      directory = /home/ariccio/hostsim
+      order = 0
+      parent = child1
+      profile = default
+      type = Terminal
+      uuid = 0b7a8cd6-d275-48b7-9999-d94a8de23ccc
+    [[[terminal4]]]
+      directory = /home/ariccio/docker-work/synergy/scripts/simulation/atg
+      order = 0
+      parent = child3
+      profile = default
+      type = Terminal
+      uuid = f88816ec-2d98-4de7-90ea-52036b86cabd
+    [[[terminal5]]]
+      command = ./hostsim start -g /home/ariccio/docker-work/synergy; ./hostsim ac; bash
+      directory = /home/ariccio/hostsim
+      order = 1
+      parent = child3
+      profile = default
+      type = Terminal
+      uuid = 03f1c295-3c3e-4658-a024-989985b4d32a
   [[antennadev]]
     [[[child0]]]
       fullscreen = False
