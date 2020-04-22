@@ -77,14 +77,14 @@
       type = Terminal
       uuid = 0b7a8cd6-d275-48b7-9999-d94a8de23ccc
     [[[terminal4]]]
-      directory = /home/ariccio/docker-work/synergy/scripts/simulation/atg
+      directory = /home/ariccio/embswit/pytest
       order = 0
       parent = child3
       profile = default
       type = Terminal
       uuid = f88816ec-2d98-4de7-90ea-52036b86cabd
     [[[terminal5]]]
-      command = ./hostsim start -g /home/ariccio/docker-work/synergy; ./hostsim ac; bash
+      command = ./hostsim start -f /home/ariccio/docker-work/synergy/scripts/simulation/atg/atg-simulation-master.tar.gz; ./hostsim ac; bash
       directory = /home/ariccio/hostsim
       order = 1
       parent = child3
