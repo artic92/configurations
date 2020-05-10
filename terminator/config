@@ -134,7 +134,7 @@
       type = Terminal
       uuid = e19b6d41-61d1-4464-8635-e6277f248978
     [[[terminal6]]]
-      directory = /home/ariccio/airspan
+      directory = /home/ariccio/evoleo
       order = 0
       parent = child5
       profile = default
