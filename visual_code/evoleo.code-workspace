@@ -1,0 +1,21 @@
+{
+	"folders": [
+		{
+			"name": "configurations",
+			"path": "../../configurations/"
+		},
+		{
+			"name": "howtos",
+			"path": "../../howtos"
+		},
+		{
+			"name": "bash_scripting",
+			"path": "../../bash_scripting"
+		},
+		{
+			"name": "evoleo",
+			"path": "../../evoleo"
+		}
+	],
+	"settings": {}
+}

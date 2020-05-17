@@ -9,6 +9,7 @@ code -n $HOME/c_codebase/
 code -n $HOME/configurations/
 code -n $HOME/configurations/visual_code/bashdevelopment.code-workspace
 code -n $HOME/configurations/visual_code/cdevelopment.code-workspace
+code -n $HOME/configurations/visual_code/evoleo.code-workspace
 code -n $HOME/configurations/visual_code/gitbaserepos.code-workspace
 code -n $HOME/configurations/visual_code/gitbaserepos.code-workspace
 code -n $HOME/configurations/visual_code/linuxkapidevelopment.code-workspace
