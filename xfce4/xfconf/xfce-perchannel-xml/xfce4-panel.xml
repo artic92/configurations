@@ -27,8 +27,14 @@
         <value type="int" value="23"/>
         <value type="int" value="14"/>
         <value type="int" value="19"/>
-        <value type="int" value="35"/>
         <value type="int" value="44"/>
+        <value type="int" value="46"/>
+        <value type="int" value="49"/>
+        <value type="int" value="47"/>
+        <value type="int" value="35"/>
+        <value type="int" value="50"/>
+        <value type="int" value="51"/>
+        <value type="int" value="48"/>
         <value type="int" value="2"/>
         <value type="int" value="30"/>
       </property>
@@ -49,9 +55,9 @@
         <value type="int" value="29"/>
         <value type="int" value="13"/>
         <value type="int" value="42"/>
+        <value type="int" value="31"/>
         <value type="int" value="25"/>
         <value type="int" value="37"/>
-        <value type="int" value="31"/>
         <value type="int" value="12"/>
         <value type="int" value="18"/>
         <value type="int" value="28"/>
@@ -76,27 +82,6 @@
       <property name="style" type="uint" value="0"/>
     </property>
     <property name="plugin-4" type="string" value="pager"/>
-    <property name="plugin-6" type="string" value="systray">
-      <property name="names-visible" type="array">
-        <value type="string" value="system-config-printer"/>
-        <value type="string" value="networkmanager applet"/>
-        <value type="string" value="task manager"/>
-        <value type="string" value="network"/>
-        <value type="string" value="blueman-applet"/>
-        <value type="string" value="update-notifier"/>
-        <value type="string" value="xfce4-power-manager"/>
-        <value type="string" value="teamviewer"/>
-        <value type="string" value="dropbox"/>
-        <value type="string" value="whatsdesk"/>
-      </property>
-      <property name="names-ordered" type="array">
-        <value type="string" value="network"/>
-        <value type="string" value="update-notifier"/>
-        <value type="string" value="blueman-tray"/>
-        <value type="string" value="networkmanager applet"/>
-        <value type="string" value="dropbox"/>
-      </property>
-    </property>
     <property name="plugin-7" type="string" value="showdesktop"/>
     <property name="plugin-8" type="string" value="separator">
       <property name="style" type="uint" value="1"/>
@@ -125,7 +110,7 @@
     <property name="plugin-23" type="string" value="power-manager-plugin"/>
     <property name="plugin-24" type="string" value="pulseaudio">
       <property name="enable-keyboard-shortcuts" type="bool" value="true"/>
-      <property name="mpris-players" type="string" value="chromium.instance1909;chromium.instance1958;chromium.instance2169;chromium.instance2206;chromium.instance2996;chromium.instance3253;chromium.instance3959;chromium.instance4303;chromium.instance4639;chromium.instance5635;spotify"/>
+      <property name="mpris-players" type="string" value="chromium.instance1909;chromium.instance1958;chromium.instance20011;chromium.instance2169;chromium.instance2206;chromium.instance2268;chromium.instance2772;chromium.instance2996;chromium.instance3253;chromium.instance3959;chromium.instance4303;chromium.instance4639;chromium.instance5635;chromium.instance7261;spotify"/>
     </property>
     <property name="plugin-26" type="string" value="screenshooter"/>
     <property name="plugin-27" type="string" value="showdesktop"/>
@@ -157,7 +142,7 @@
     </property>
     <property name="plugin-22" type="string" value="launcher">
       <property name="items" type="array">
-        <value type="string" value="15897124131.desktop"/>
+        <value type="string" value="15919961022.desktop"/>
       </property>
     </property>
     <property name="plugin-25" type="string" value="launcher">
@@ -213,7 +198,42 @@
       </property>
     </property>
     <property name="plugin-14" type="string" value="notification-plugin"/>
-    <property name="plugin-35" type="string" value="clock"/>
+    <property name="plugin-35" type="string" value="clock">
+      <property name="tooltip-format" type="string" value="%A %d %B %Y"/>
+      <property name="mode" type="uint" value="4"/>
+      <property name="digital-format" type="string" value="%R"/>
+    </property>
     <property name="plugin-44" type="string" value="separator"/>
+    <property name="plugin-6" type="string" value="systray">
+      <property name="names-ordered" type="array">
+        <value type="string" value="update-notifier"/>
+        <value type="string" value="blueman-tray"/>
+        <value type="string" value="networkmanager applet"/>
+        <value type="string" value="network"/>
+        <value type="string" value="dropbox"/>
+      </property>
+    </property>
+    <property name="plugin-46" type="string" value="clock">
+      <property name="digital-format" type="string" value="%A%n%d %b %Y"/>
+    </property>
+    <property name="plugin-47" type="string" value="clock">
+      <property name="digital-format" type="string" value="%R%n%Z"/>
+      <property name="mode" type="uint" value="2"/>
+      <property name="timezone" type="string" value="Universal"/>
+    </property>
+    <property name="plugin-48" type="string" value="separator"/>
+    <property name="plugin-49" type="string" value="clock">
+      <property name="digital-format" type="string" value="%R%n%Z"/>
+      <property name="timezone" type="string" value="US/Eastern"/>
+    </property>
+    <property name="plugin-50" type="string" value="clock">
+      <property name="digital-format" type="string" value="%R%n%Z"/>
+      <property name="timezone" type="string" value="Europe/Moscow"/>
+      <property name="mode" type="uint" value="2"/>
+    </property>
+    <property name="plugin-51" type="string" value="clock">
+      <property name="digital-format" type="string" value="%R%n%Z"/>
+      <property name="timezone" type="string" value="Japan"/>
+    </property>
   </property>
 </channel>

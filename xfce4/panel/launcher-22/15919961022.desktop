@@ -9,7 +9,7 @@ Comment[en_GB]=Access the Internet
 Exec=env BAMF_DESKTOP_FILE_HINT=/var/lib/snapd/desktop/applications/chromium_chromium.desktop /snap/bin/chromium %U
 Terminal=false
 Type=Application
-Icon=/snap/chromium/1143/chromium.png
+Icon=/snap/chromium/1182/chromium.png
 Categories=Network;WebBrowser;
 MimeType=text/html;text/xml;application/xhtml_xml;x-scheme-handler/http;x-scheme-handler/https;
 StartupNotify=true
