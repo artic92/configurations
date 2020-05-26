@@ -16,7 +16,6 @@
         <value type="int" value="15"/>
         <value type="int" value="32"/>
         <value type="int" value="21"/>
-        <value type="int" value="20"/>
         <value type="int" value="26"/>
         <value type="int" value="27"/>
         <value type="int" value="34"/>
@@ -24,10 +23,12 @@
         <value type="int" value="33"/>
         <value type="int" value="17"/>
         <value type="int" value="6"/>
-        <value type="int" value="35"/>
-        <value type="int" value="19"/>
-        <value type="int" value="23"/>
         <value type="int" value="24"/>
+        <value type="int" value="23"/>
+        <value type="int" value="14"/>
+        <value type="int" value="19"/>
+        <value type="int" value="35"/>
+        <value type="int" value="44"/>
         <value type="int" value="2"/>
         <value type="int" value="30"/>
       </property>
@@ -57,7 +58,6 @@
         <value type="int" value="10"/>
         <value type="int" value="43"/>
         <value type="int" value="9"/>
-        <value type="int" value="38"/>
         <value type="int" value="39"/>
         <value type="int" value="41"/>
         <value type="int" value="40"/>
@@ -89,6 +89,13 @@
         <value type="string" value="dropbox"/>
         <value type="string" value="whatsdesk"/>
       </property>
+      <property name="names-ordered" type="array">
+        <value type="string" value="network"/>
+        <value type="string" value="update-notifier"/>
+        <value type="string" value="blueman-tray"/>
+        <value type="string" value="networkmanager applet"/>
+        <value type="string" value="dropbox"/>
+      </property>
     </property>
     <property name="plugin-7" type="string" value="showdesktop"/>
     <property name="plugin-8" type="string" value="separator">
@@ -114,7 +121,6 @@
     </property>
     <property name="plugin-17" type="string" value="cpugraph"/>
     <property name="plugin-19" type="string" value="xkb"/>
-    <property name="plugin-20" type="string" value="mailwatch"/>
     <property name="plugin-21" type="string" value="xfce4-notes-plugin"/>
     <property name="plugin-23" type="string" value="power-manager-plugin"/>
     <property name="plugin-24" type="string" value="pulseaudio">
@@ -134,7 +140,6 @@
       <property name="style" type="uint" value="2"/>
       <property name="expand" type="bool" value="false"/>
     </property>
-    <property name="plugin-35" type="string" value="xfce4-orageclock-plugin"/>
     <property name="plugin-5" type="string" value="launcher">
       <property name="items" type="array">
         <value type="string" value="15837848451.desktop"/>
@@ -181,11 +186,6 @@
         <value type="string" value="15897135661.desktop"/>
       </property>
     </property>
-    <property name="plugin-38" type="string" value="launcher">
-      <property name="items" type="array">
-        <value type="string" value="15897136292.desktop"/>
-      </property>
-    </property>
     <property name="plugin-39" type="string" value="launcher">
       <property name="items" type="array">
         <value type="string" value="15897136623.desktop"/>
@@ -203,7 +203,7 @@
     </property>
     <property name="plugin-42" type="string" value="launcher">
       <property name="items" type="array">
-        <value type="string" value="15897137726.desktop"/>
+        <value type="string" value="15905097501.desktop"/>
       </property>
     </property>
     <property name="plugin-43" type="string" value="separator"/>
@@ -212,5 +212,8 @@
         <value type="string" value="15897142381.desktop"/>
       </property>
     </property>
+    <property name="plugin-14" type="string" value="notification-plugin"/>
+    <property name="plugin-35" type="string" value="clock"/>
+    <property name="plugin-44" type="string" value="separator"/>
   </property>
 </channel>

@@ -13,9 +13,11 @@
     <property name="dpms-on-battery-sleep" type="empty"/>
     <property name="dpms-on-battery-off" type="empty"/>
     <property name="show-panel-label" type="empty"/>
+    <property name="inactivity-sleep-mode-on-ac" type="empty"/>
+    <property name="inactivity-sleep-mode-on-battery" type="empty"/>
     <property name="sleep-button-action" type="uint" value="3"/>
     <property name="hibernate-button-action" type="uint" value="3"/>
-    <property name="show-tray-icon" type="bool" value="true"/>
+    <property name="show-tray-icon" type="bool" value="false"/>
     <property name="presentation-mode" type="bool" value="false"/>
     <property name="general-notification" type="bool" value="true"/>
     <property name="brightness-switch-restore-on-exit" type="int" value="1"/>
