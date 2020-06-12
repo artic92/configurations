@@ -13,6 +13,7 @@ code -n $HOME/configurations/visual_code/evoleo.code-workspace
 code -n $HOME/configurations/visual_code/gitbaserepos.code-workspace
 code -n $HOME/configurations/visual_code/gitbaserepos.code-workspace
 code -n $HOME/configurations/visual_code/linuxkapidevelopment.code-workspace
+code -n $HOME/configurations/visual_code/plato.code-workspace
 code -n $HOME/configurations/visual_code/professionalprofile.code-workspace
 code -n $HOME/cover_letter/
 code -n $HOME/Dropbox/

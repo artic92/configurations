@@ -1,0 +1,20 @@
+{
+	"folders": [
+		{
+			"path": "../../PLATO"
+		},
+		{
+			"path": "../../Dropbox/Libreria/sistemi_embedded/rmap_core_v1_00_enduser_release"
+		},
+		{
+			"path": "../../digital_systems"
+		},
+		{
+			"path": "../../gpio-zynq-7000"
+		},
+		{
+			"path": "../../sistemi-embedded-task2"
+		}
+	],
+	"settings": {}
+}
