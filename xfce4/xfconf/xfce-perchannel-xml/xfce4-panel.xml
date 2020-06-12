@@ -206,6 +206,8 @@
     <property name="plugin-44" type="string" value="separator"/>
     <property name="plugin-6" type="string" value="systray">
       <property name="names-ordered" type="array">
+        <value type="string" value="caffeine-indicator"/>
+        <value type="string" value="bluetooth enabled"/>
         <value type="string" value="update-notifier"/>
         <value type="string" value="blueman-tray"/>
         <value type="string" value="networkmanager applet"/>
