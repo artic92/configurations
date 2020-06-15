@@ -12,6 +12,7 @@
   <property name="applications" type="empty">
     <property name="known_applications" type="array">
       <value type="string" value="balena-etcher-electron"/>
+      <value type="string" value="blueman"/>
       <value type="string" value="Blueman"/>
       <value type="string" value="chromium"/>
       <value type="string" value="Dropbox"/>
@@ -22,6 +23,8 @@
       <value type="string" value="org.gnome.Software"/>
       <value type="string" value="Spotify"/>
       <value type="string" value="System Config Printer Notification"/>
+      <value type="string" value="teams-for-linux"/>
+      <value type="string" value="thunar"/>
       <value type="string" value="Thunar"/>
       <value type="string" value="thunar-volman"/>
       <value type="string" value="Thunderbird"/>
