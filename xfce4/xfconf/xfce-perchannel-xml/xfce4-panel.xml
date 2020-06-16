@@ -56,6 +56,9 @@
         <value type="int" value="13"/>
         <value type="int" value="42"/>
         <value type="int" value="31"/>
+        <value type="int" value="20"/>
+        <value type="int" value="38"/>
+        <value type="int" value="31"/>
         <value type="int" value="25"/>
         <value type="int" value="37"/>
         <value type="int" value="12"/>
@@ -142,7 +145,7 @@
     </property>
     <property name="plugin-22" type="string" value="launcher">
       <property name="items" type="array">
-        <value type="string" value="15919961022.desktop"/>
+        <value type="string" value="15923440222.desktop"/>
       </property>
     </property>
     <property name="plugin-25" type="string" value="launcher">
@@ -240,6 +243,19 @@
     <property name="plugin-51" type="string" value="clock">
       <property name="digital-format" type="string" value="%R%n%Z"/>
       <property name="timezone" type="string" value="Japan"/>
+    </property>
+    <property name="plugin-20" type="string" value="launcher">
+      <property name="items" type="array">
+      </property>
+    </property>
+    <property name="plugin-38" type="string" value="launcher">
+      <property name="items" type="array">
+      </property>
+    </property>
+    <property name="plugin-45" type="empty">
+      <property name="items" type="array">
+        <value type="string" value="15923440473.desktop"/>
+      </property>
     </property>
   </property>
 </channel>
