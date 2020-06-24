@@ -126,21 +126,33 @@
           <property name="color-style" type="int" value="0"/>
           <property name="image-style" type="int" value="5"/>
           <property name="last-image" type="string" value="/home/ariccio/configurations/wallpapers/landscape/hst_30th_anniversary_picture.jpg"/>
+          <property name="backdrop-cycle-enable" type="bool" value="true"/>
+          <property name="backdrop-cycle-period" type="int" value="5"/>
+          <property name="backdrop-cycle-random-order" type="bool" value="true"/>
         </property>
         <property name="workspace1" type="empty">
           <property name="color-style" type="int" value="0"/>
           <property name="image-style" type="int" value="5"/>
           <property name="last-image" type="string" value="/home/ariccio/configurations/wallpapers/landscape/souyz_ascent.jpg"/>
+          <property name="backdrop-cycle-enable" type="bool" value="true"/>
+          <property name="backdrop-cycle-period" type="int" value="5"/>
+          <property name="backdrop-cycle-random-order" type="bool" value="true"/>
         </property>
         <property name="workspace2" type="empty">
           <property name="color-style" type="int" value="0"/>
           <property name="image-style" type="int" value="5"/>
           <property name="last-image" type="string" value="/home/ariccio/configurations/wallpapers/landscape/hst_ultra_deep_field.jpg"/>
+          <property name="backdrop-cycle-enable" type="bool" value="true"/>
+          <property name="backdrop-cycle-period" type="int" value="5"/>
+          <property name="backdrop-cycle-random-order" type="bool" value="true"/>
         </property>
         <property name="workspace3" type="empty">
           <property name="color-style" type="int" value="0"/>
           <property name="image-style" type="int" value="5"/>
-          <property name="last-image" type="string" value="/home/ariccio/configurations/wallpapers/landscape/sts_132_atlantis_liftoff.jpg"/>
+          <property name="last-image" type="string" value="/home/ariccio/configurations/wallpapers/landscape/soyuz_and_iss.jpg"/>
+          <property name="backdrop-cycle-enable" type="bool" value="true"/>
+          <property name="backdrop-cycle-period" type="int" value="5"/>
+          <property name="backdrop-cycle-random-order" type="bool" value="true"/>
         </property>
       </property>
       <property name="monitorHDMI-2" type="empty">
