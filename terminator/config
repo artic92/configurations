@@ -1,6 +1,11 @@
 [global_config]
   suppress_multiple_term_dialog = True
 [keybindings]
+[profiles]
+  [[default]]
+    cursor_color = "#aaaaaa"
+    scrollback_lines = 20000
+    scrollback_infinite = True
 [layouts]
   [[default]]
     [[[child0]]]
@@ -148,9 +153,36 @@
       profile = default
       type = Terminal
       uuid = 02e47dd7-0f4b-4ac5-88cd-9d042c6297d2
+  [[plato]]
+    [[[child0]]]
+      type = Window
+      parent = ""
+      order = 0
+      position = 0:33
+      maximised = True
+      fullscreen = False
+      size = 1920, 1023
+      title = ariccio@pktariccio: ~
+      last_active_term = 0b7a8cd6-d275-48b7-9999-d94a8de23ccc
+      last_active_window = True
+    [[[child1]]]
+      type = HPaned
+      parent = child0
+      order = 0
+      position = 882
+      ratio = 0.4605744125326371
+    [[[terminal2]]]
+      directory = /home/ariccio/PLATO/FPGA/Tests/rmap_core_v1_00_enduser_release/src/enduser_tb/uut
+      type = Terminal
+      parent = child1
+      order = 0
+      profile = default
+      uuid = 0b7a8cd6-d275-48b7-9999-d94a8de23ccc
+    [[[terminal3]]]
+      directory = /home/ariccio/PLATO/FPGA/Tests/rmap_core_v1_00_enduser_release/src/enduser_tb/uut
+      type = Terminal
+      parent = child1
+      order = 1
+      profile = default
+      uuid = adba9f96-225e-41fd-800f-b6ce3c6fb4f2
 [plugins]
-[profiles]
-  [[default]]
-    cursor_color = "#aaaaaa"
-    scrollback_infinite = True
-    scrollback_lines = 20000

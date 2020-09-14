@@ -34,6 +34,7 @@ spotify
 teams-for-linux
 teamviewer
 telegram-desktop
+terminator -l plato
 terminator -l profprofile
 terminator -l repos
 thunar
