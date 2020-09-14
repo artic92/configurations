@@ -4,9 +4,6 @@
 			"path": "../../PLATO"
 		},
 		{
-			"path": "../../Dropbox/Libreria/sistemi_embedded/rmap_core_v1_00_enduser_release"
-		},
-		{
 			"path": "../../digital_systems"
 		},
 		{
@@ -14,6 +11,9 @@
 		},
 		{
 			"path": "../../sistemi-embedded-task2"
+		},
+		{
+			"path": "../../evoleo/plato"
 		}
 	],
 	"settings": {}
