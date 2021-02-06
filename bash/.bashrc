@@ -64,7 +64,7 @@ fi
 jobscount() {
   local stopped=$(jobs -sp | wc -l)
   local running=$(jobs -rp | wc -l)
-  ((running+stopped)) && echo -n "(${running}r/${stopped}s)"
+  ((running+stopped)) && echo -ne "\u001b[36m(${running}r/${stopped}s)\u001b[0m"
 }
 
 gitbranch() {
@@ -73,15 +73,15 @@ gitbranch() {
   if [[ $branch_count -ge 1 ]]; then
     if [ "$branch" == "master" ]; then
       if [[ "$OSTYPE" == "linux-gnu" ]]; then
-        echo -ne "\e[41m$branch\e[49m"
+        echo -ne "(\e[41m$branch\e[49m)"
       elif [[ "$OSTYPE" == "darwin"* ]]; then
-        echo -ne "\033[41m$branch\033[49m"
+        echo -ne "(\033[41m$branch\033[49m)"
       fi
     else
       if [[ "$OSTYPE" == "linux-gnu" ]]; then
-        echo -ne "\e[93m$branch\e[39m"
+        echo -ne "\e[93m($branch)\e[39m"
       elif [[ "$OSTYPE" == "darwin"* ]]; then
-        echo -ne "\033[93m$branch\033[39m"
+        echo -ne "\033[93m($branch)\033[39m"
       fi
     fi
   else
@@ -90,8 +90,7 @@ gitbranch() {
 }
 
 if [ "$color_prompt" = yes ]; then
-    # PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ '
-    export PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]$(jobscount)($(gitbranch))\$ '
+    export PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]# \u@\h$(jobscount)$(gitbranch)\[\033[00m\]\n\[\033[01;34m\]# \w\[\033[00m\]\n'
 else
     PS1='${debian_chroot:+($debian_chroot)}\u@\h:\w\$ '
 fi
