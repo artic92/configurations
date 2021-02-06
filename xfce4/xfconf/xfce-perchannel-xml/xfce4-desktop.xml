@@ -125,7 +125,7 @@
         <property name="workspace0" type="empty">
           <property name="color-style" type="int" value="0"/>
           <property name="image-style" type="int" value="5"/>
-          <property name="last-image" type="string" value="/home/ariccio/configurations/wallpapers/landscape/hst_30th_anniversary_picture.jpg"/>
+          <property name="last-image" type="string" value="/home/ariccio/configurations/wallpapers/landscape/hst_ngc5468_supernova.jpg"/>
           <property name="backdrop-cycle-enable" type="bool" value="true"/>
           <property name="backdrop-cycle-period" type="int" value="5"/>
           <property name="backdrop-cycle-random-order" type="bool" value="true"/>
@@ -133,25 +133,33 @@
         <property name="workspace1" type="empty">
           <property name="color-style" type="int" value="0"/>
           <property name="image-style" type="int" value="5"/>
-          <property name="last-image" type="string" value="/home/ariccio/configurations/wallpapers/landscape/souyz_ascent.jpg"/>
+          <property name="last-image" type="string" value="/home/ariccio/configurations/wallpapers/landscape/gemini3_on_pad.jpg"/>
           <property name="backdrop-cycle-enable" type="bool" value="true"/>
-          <property name="backdrop-cycle-period" type="int" value="5"/>
+          <property name="backdrop-cycle-period" type="int" value="3"/>
           <property name="backdrop-cycle-random-order" type="bool" value="true"/>
         </property>
         <property name="workspace2" type="empty">
           <property name="color-style" type="int" value="0"/>
           <property name="image-style" type="int" value="5"/>
-          <property name="last-image" type="string" value="/home/ariccio/configurations/wallpapers/landscape/hst_ultra_deep_field.jpg"/>
+          <property name="last-image" type="string" value="/home/ariccio/configurations/wallpapers/landscape/sts_mission_profile.jpg"/>
           <property name="backdrop-cycle-enable" type="bool" value="true"/>
-          <property name="backdrop-cycle-period" type="int" value="5"/>
           <property name="backdrop-cycle-random-order" type="bool" value="true"/>
+          <property name="backdrop-cycle-period" type="int" value="3"/>
         </property>
         <property name="workspace3" type="empty">
           <property name="color-style" type="int" value="0"/>
           <property name="image-style" type="int" value="5"/>
-          <property name="last-image" type="string" value="/home/ariccio/configurations/wallpapers/landscape/soyuz_and_iss.jpg"/>
+          <property name="last-image" type="string" value="/home/ariccio/configurations/wallpapers/landscape/apollo_soyuz.jpg"/>
           <property name="backdrop-cycle-enable" type="bool" value="true"/>
-          <property name="backdrop-cycle-period" type="int" value="5"/>
+          <property name="backdrop-cycle-period" type="int" value="3"/>
+          <property name="backdrop-cycle-random-order" type="bool" value="true"/>
+        </property>
+        <property name="workspace4" type="empty">
+          <property name="color-style" type="int" value="0"/>
+          <property name="image-style" type="int" value="5"/>
+          <property name="last-image" type="string" value="/home/ariccio/configurations/wallpapers/landscape/spacex_falcon_heavy_boosters_landing.jpg"/>
+          <property name="backdrop-cycle-enable" type="bool" value="true"/>
+          <property name="backdrop-cycle-period" type="int" value="3"/>
           <property name="backdrop-cycle-random-order" type="bool" value="true"/>
         </property>
       </property>
@@ -159,7 +167,7 @@
         <property name="workspace0" type="empty">
           <property name="color-style" type="int" value="0"/>
           <property name="image-style" type="int" value="5"/>
-          <property name="last-image" type="string" value="/home/ariccio/configurations/wallpapers/landscape/iss_sts_134_undocking.jpg"/>
+          <property name="last-image" type="string" value="/home/ariccio/configurations/wallpapers/landscape/earth_atmosphere.jpg"/>
         </property>
         <property name="workspace1" type="empty">
           <property name="color-style" type="int" value="0"/>
@@ -176,6 +184,125 @@
           <property name="image-style" type="int" value="5"/>
           <property name="last-image" type="string" value="/home/ariccio/configurations/wallpapers/landscape/mir_from_sts89_endeavour.jpg"/>
         </property>
+        <property name="workspace4" type="empty">
+          <property name="color-style" type="int" value="0"/>
+          <property name="image-style" type="int" value="5"/>
+          <property name="last-image" type="string" value="/home/ariccio/configurations/wallpapers/landscape/energia_buran.jpg"/>
+          <property name="backdrop-cycle-enable" type="bool" value="true"/>
+          <property name="backdrop-cycle-period" type="int" value="3"/>
+          <property name="backdrop-cycle-random-order" type="bool" value="true"/>
+        </property>
+      </property>
+      <property name="monitorHDMI-1" type="empty">
+        <property name="workspace0" type="empty">
+          <property name="color-style" type="int" value="0"/>
+          <property name="image-style" type="int" value="5"/>
+          <property name="last-image" type="string" value="/home/ariccio/configurations/wallpapers/landscape/top_of_atmosphere.jpg"/>
+          <property name="backdrop-cycle-enable" type="bool" value="true"/>
+          <property name="backdrop-cycle-period" type="int" value="5"/>
+          <property name="backdrop-cycle-random-order" type="bool" value="true"/>
+        </property>
+        <property name="workspace1" type="empty">
+          <property name="color-style" type="int" value="0"/>
+          <property name="image-style" type="int" value="5"/>
+          <property name="last-image" type="string" value="/home/ariccio/configurations/wallpapers/landscape/hst_ngc5468_supernova.jpg"/>
+          <property name="backdrop-cycle-enable" type="bool" value="true"/>
+          <property name="backdrop-cycle-period" type="int" value="3"/>
+          <property name="backdrop-cycle-random-order" type="bool" value="true"/>
+        </property>
+        <property name="workspace2" type="empty">
+          <property name="color-style" type="int" value="0"/>
+          <property name="image-style" type="int" value="5"/>
+          <property name="last-image" type="string" value="/home/ariccio/configurations/wallpapers/landscape/earth_atmosphere.jpg"/>
+          <property name="backdrop-cycle-enable" type="bool" value="true"/>
+          <property name="backdrop-cycle-period" type="int" value="3"/>
+          <property name="backdrop-cycle-random-order" type="bool" value="true"/>
+        </property>
+        <property name="workspace3" type="empty">
+          <property name="color-style" type="int" value="0"/>
+          <property name="image-style" type="int" value="5"/>
+          <property name="last-image" type="string" value="/home/ariccio/Dropbox/configurations/wallpapers/landscape/soyuz_horizontal.jpg"/>
+          <property name="backdrop-cycle-enable" type="bool" value="true"/>
+          <property name="backdrop-cycle-period" type="int" value="3"/>
+          <property name="backdrop-cycle-random-order" type="bool" value="true"/>
+        </property>
+        <property name="workspace4" type="empty">
+          <property name="color-style" type="int" value="0"/>
+          <property name="image-style" type="int" value="5"/>
+          <property name="last-image" type="string" value="/home/ariccio/configurations/wallpapers/landscape/apollo_earth_from_moon.jpg"/>
+          <property name="backdrop-cycle-enable" type="bool" value="true"/>
+          <property name="backdrop-cycle-period" type="int" value="3"/>
+          <property name="backdrop-cycle-random-order" type="bool" value="true"/>
+        </property>
+      </property>
+      <property name="monitorDP-1-1" type="empty">
+        <property name="workspace0" type="empty">
+          <property name="color-style" type="int" value="0"/>
+          <property name="image-style" type="int" value="5"/>
+          <property name="last-image" type="string" value="/home/ariccio/configurations/wallpapers/landscape/hst_30th_anniversary_picture.jpg"/>
+          <property name="backdrop-cycle-enable" type="bool" value="true"/>
+          <property name="backdrop-cycle-period" type="int" value="5"/>
+          <property name="backdrop-cycle-random-order" type="bool" value="true"/>
+        </property>
+        <property name="workspace1" type="empty">
+          <property name="color-style" type="int" value="0"/>
+          <property name="image-style" type="int" value="5"/>
+          <property name="last-image" type="string" value="/home/ariccio/configurations/wallpapers/landscape/energia_buran2.jpg"/>
+          <property name="backdrop-cycle-enable" type="bool" value="true"/>
+          <property name="backdrop-cycle-period" type="int" value="3"/>
+          <property name="backdrop-cycle-random-order" type="bool" value="true"/>
+        </property>
+        <property name="workspace2" type="empty">
+          <property name="color-style" type="int" value="0"/>
+          <property name="image-style" type="int" value="5"/>
+          <property name="last-image" type="string" value="/home/ariccio/configurations/wallpapers/landscape/spacex_falcon_heavy_vertical.jpg"/>
+          <property name="backdrop-cycle-enable" type="bool" value="true"/>
+          <property name="backdrop-cycle-period" type="int" value="3"/>
+          <property name="backdrop-cycle-random-order" type="bool" value="true"/>
+        </property>
+        <property name="workspace3" type="empty">
+          <property name="color-style" type="int" value="0"/>
+          <property name="image-style" type="int" value="5"/>
+          <property name="last-image" type="string" value="/home/ariccio/Dropbox/configurations/wallpapers/landscape/spacex_falcon_heavy_liftoff2.jpg"/>
+          <property name="backdrop-cycle-enable" type="bool" value="true"/>
+          <property name="backdrop-cycle-period" type="int" value="3"/>
+          <property name="backdrop-cycle-random-order" type="bool" value="true"/>
+        </property>
+        <property name="workspace4" type="empty">
+          <property name="color-style" type="int" value="0"/>
+          <property name="image-style" type="int" value="5"/>
+          <property name="last-image" type="string" value="/home/ariccio/configurations/wallpapers/landscape/spacex_falcon_heavy_liftoff.jpg"/>
+          <property name="backdrop-cycle-enable" type="bool" value="true"/>
+          <property name="backdrop-cycle-period" type="int" value="3"/>
+          <property name="backdrop-cycle-random-order" type="bool" value="true"/>
+        </property>
+      </property>
+      <property name="monitorDP-1-2" type="empty">
+        <property name="workspace0" type="empty">
+          <property name="color-style" type="int" value="0"/>
+          <property name="image-style" type="int" value="5"/>
+          <property name="last-image" type="string" value="/usr/share/xfce4/backdrops/xubuntu-wallpaper.png"/>
+        </property>
+        <property name="workspace1" type="empty">
+          <property name="color-style" type="int" value="0"/>
+          <property name="image-style" type="int" value="5"/>
+          <property name="last-image" type="string" value="/usr/share/xfce4/backdrops/xubuntu-wallpaper.png"/>
+        </property>
+        <property name="workspace2" type="empty">
+          <property name="color-style" type="int" value="0"/>
+          <property name="image-style" type="int" value="5"/>
+          <property name="last-image" type="string" value="/usr/share/xfce4/backdrops/xubuntu-wallpaper.png"/>
+        </property>
+        <property name="workspace3" type="empty">
+          <property name="color-style" type="int" value="0"/>
+          <property name="image-style" type="int" value="5"/>
+          <property name="last-image" type="string" value="/usr/share/xfce4/backdrops/xubuntu-wallpaper.png"/>
+        </property>
+        <property name="workspace4" type="empty">
+          <property name="color-style" type="int" value="0"/>
+          <property name="image-style" type="int" value="5"/>
+          <property name="last-image" type="string" value="/usr/share/xfce4/backdrops/xubuntu-wallpaper.png"/>
+        </property>
       </property>
     </property>
     <property name="single-workspace-mode" type="bool" value="false"/>
@@ -190,7 +317,7 @@
     <property name="show-sticky-once" type="bool" value="false"/>
   </property>
   <property name="last" type="empty">
-    <property name="window-width" type="int" value="605"/>
-    <property name="window-height" type="int" value="615"/>
+    <property name="window-width" type="int" value="666"/>
+    <property name="window-height" type="int" value="631"/>
   </property>
 </channel>
