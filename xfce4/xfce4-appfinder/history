@@ -10,6 +10,7 @@ code -n $HOME/configurations/
 code -n $HOME/configurations/visual_code/bashdevelopment.code-workspace
 code -n $HOME/configurations/visual_code/cdevelopment.code-workspace
 code -n $HOME/configurations/visual_code/gitbaserepos.code-workspace
+code -n $HOME/configurations/visual_code/gitbaserepos.code-workspace
 code -n $HOME/configurations/visual_code/linuxkapidevelopment.code-workspace
 code -n $HOME/configurations/visual_code/professionalprofile.code-workspace
 code -n $HOME/cover_letter/
@@ -28,9 +29,12 @@ poweroff
 reboot
 spotify
 teamviewer
+telegram-desktop
 terminator -l profprofile
 terminator -l repos
 thunar
 virtualbox
+vlc
 whatsdesk
 xfce4-session-logout -l
+zoom-client
