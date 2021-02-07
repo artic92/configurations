@@ -73,9 +73,9 @@ gitbranch() {
   if [[ $branch_count -ge 1 ]]; then
     if [ "$branch" == "master" ]; then
       if [[ "$OSTYPE" == "linux-gnu" ]]; then
-        echo -ne "(\e[41m$branch\e[49m)"
+        echo -ne "\u001b[0m(\e[41m$branch\e[49m)"
       elif [[ "$OSTYPE" == "darwin"* ]]; then
-        echo -ne "(\033[41m$branch\033[49m)"
+        echo -ne "\u001b[0m(\033[41m$branch\033[49m)"
       fi
     else
       if [[ "$OSTYPE" == "linux-gnu" ]]; then
