@@ -5,7 +5,8 @@ Comment=unofficial whatsapp client for linux
 Exec=env BAMF_DESKTOP_FILE_HINT=/var/lib/snapd/desktop/applications/whatsdesk_whatsdesk.desktop /snap/bin/whatsdesk
 Terminal=false
 Type=Application
-Icon=/snap/whatsdesk/17/meta/gui/icon.png
+Icon=/snap/whatsdesk/20/meta/gui/icon.png
 StartupWMClass=whatsdesk
+MimeType=whatsapp;
 Categories=Network;
 X-XFCE-Source=file:///var/lib/snapd/desktop/applications/whatsdesk_whatsdesk.desktop
