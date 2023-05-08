@@ -1,7 +1,7 @@
 # This is Git's per-user configuration file.
 [user]
   name = Antonio Riccio
-  email = antonio.riccio.27@gmail.com
+  email = antonio.riccio@exploration.space
 [alias]
   # List available aliases (not working)
   aliases = !git config --get-regexp alias | sed -re 's/alias\\.(\\S*)\\s(.*)$/\\1 = \\2/g'
