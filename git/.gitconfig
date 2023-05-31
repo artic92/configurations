@@ -8,10 +8,16 @@
   # Command shortcuts
   f = fetch
   ci = commit
+  cim = commit -m
   co = checkout
+  cob = checkout -b
   st = status
   br = branch
+  brd = branch -d
   cp = cherry-pick
+  po = remote prune origin
+  rv = revert
+  rvc = revert --continue
   rb = rebase
   rbi = rebase -i
   rbir = rebase -i --root
@@ -19,8 +25,11 @@
   rba = rebase --abort
   bra = branch -a
   sta = stash
+  stm = stash -m
+  ssp = stash show -p
   stl = stash list
   df = diff --color-words='[^[:space:]]'
+  dfc = df --cached
   sh = show --color-words='[^[:space:]]'
   # Reuse the last dropped commit message
   rci = commit -C HEAD@{1}
