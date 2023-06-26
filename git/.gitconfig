@@ -9,6 +9,7 @@
   f = fetch
   ci = commit
   cim = commit -m
+  adp = add -p
   co = checkout
   cob = checkout -b
   st = status
@@ -18,6 +19,7 @@
   po = remote prune origin
   rv = revert
   rvc = revert --continue
+  rva = revert --abort
   rb = rebase
   rbi = rebase -i
   rbir = rebase -i --root
@@ -28,6 +30,7 @@
   stm = stash -m
   ssp = stash show -p
   stl = stash list
+  stp = stash pop
   df = diff --color-words='[^[:space:]]'
   dfc = df --cached
   sh = show --color-words='[^[:space:]]'
