@@ -92,3 +92,8 @@
 	rebase = true
 [credential]
 	helper = cache --timeout=3600
+[includeIf "gitdir:~/private"]
+    [user]
+        email = "ariccio@protonmail.com"
+    [core]
+        sshCommand = "ssh -i ~/.ssh/private_key"
