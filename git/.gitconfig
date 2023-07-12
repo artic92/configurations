@@ -1,6 +1,6 @@
 # This is Git's per-user configuration file.
 [user]
-  name = Antonio Riccio
+	name = Antonio Riccio
   email = antonio.riccio@exploration.space
 [alias]
   # List available aliases (not working)
@@ -92,8 +92,5 @@
 	rebase = true
 [credential]
 	helper = cache --timeout=3600
-[includeIf "gitdir:~/private"]
-    [user]
-        email = "ariccio@protonmail.com"
-    [core]
-        sshCommand = "ssh -i ~/.ssh/private_key"
+[includeIf "gitdir:~/private/"]
+  path = ~/.gitconfig.private

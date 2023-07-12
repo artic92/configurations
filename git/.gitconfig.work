@@ -1,0 +1,5 @@
+[user]
+	name = Antonio Riccio
+    email = antonio.riccio@exploration.space
+[core]
+    sshCommand = "ssh -i ~/.ssh/work_key"

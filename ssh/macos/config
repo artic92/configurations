@@ -5,12 +5,19 @@ Host obc-dev.muc
 Host github.com
   AddKeysToAgent yes
   UseKeychain yes
-  IdentityFile ~/.ssh/private_key
-
-Host github.com
-  AddKeysToAgent yes
-  UseKeychain yes
   IdentityFile ~/.ssh/work_key
+
+#ariccio-tec account
+Host github.com-ariccio-tec
+	HostName github.com
+	User git
+	IdentityFile ~/.ssh/work_key
+
+#ariccio account
+Host github.com-ariccio
+	HostName github.com
+	User git
+	IdentityFile ~/.ssh/private_key
 
 # Fig ssh integration. Keep at the bottom of this file.
 Match all
