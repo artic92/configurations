@@ -1,0 +1,60 @@
+{
+	"folders": [
+		{
+			"name": "sample_lib",
+			"path": "../../sample_lib"
+		},
+		{
+			"name": "sample_app",
+			"path": "../../sample_app"
+		},
+		{
+			"name": "skeleton_app",
+			"path": "../../skeleton_app"
+		},
+		{
+			"name": "pycrc",
+			"path": "../../pycrc"
+		},
+		{
+			"name": "mission_possible_avionics",
+			"path": "../../mission_possible_avionics"
+		},
+		{
+			"name": "mission_possible_fsw",
+			"path": "../../mission_possible_fsw"
+		},
+		{
+			"name": "py-daedalus-lib",
+			"path": "../../py-daedalus-lib"
+		},
+		{
+			"name": "septentrio_gnss_driver",
+			"path": "../../septentrio_gnss_driver"
+		},
+		{
+			"name": "nyx_gnc_c_lib",
+			"path": "../../nyx_gnc_c_lib"
+		},
+		{
+			"name": "flight_software",
+			"path": "../../flight_software"
+		},
+		{
+			"path": "../../yamcs"
+		},
+		{
+			"path": "../../CFS_IO_LIB"
+		}
+	],
+	"settings": {
+		"files.associations": {
+			"sample_app_config.h": "c",
+			"common_types.h": "c",
+			"ut_common.h": "c",
+			"utassert.h": "c",
+			"rcs_manager.h": "c",
+			"osapi.h": "c"
+		}
+	}
+}
