@@ -1,7 +1,16 @@
-Host * 
+Host obc-dev.muc
+  HostName obc-dev.muc
+  User root
+
+Host github.com
   AddKeysToAgent yes
   UseKeychain yes
-  IdentityFile ~/.ssh/id_rsa
+  IdentityFile ~/.ssh/private_key
+
+Host github.com
+  AddKeysToAgent yes
+  UseKeychain yes
+  IdentityFile ~/.ssh/work_key
 
 # Fig ssh integration. Keep at the bottom of this file.
 Match all
