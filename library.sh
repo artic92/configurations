@@ -18,7 +18,7 @@ SUDO=sudo
 #  useful paths
 ###################################################
 SSH_DIR="$HOME"/.ssh
-CONFIGURATIONS_DIR="$HOME"/configurations
+CONFIGURATIONS_DIR="$HOME"/private/configurations
 
 ###################################################
 #  error definitions
