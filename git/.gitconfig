@@ -1,16 +1,22 @@
 # This is Git's per-user configuration file.
 [user]
   name = Antonio Riccio
-  email = antonio.riccio.27@gmail.com
+  email = hi@ariccio.me
 [alias]
   # List available aliases (not working)
   aliases = !git config --get-regexp alias | sed -re 's/alias\\.(\\S*)\\s(.*)$/\\1 = \\2/g'
   # Command shortcuts
   f = fetch
+  m = merge
+  adp = add -p
   ci = commit
+  cim = commit -m
   co = checkout
+  cob = checkout -b
+  s = status
   st = status
   br = branch
+  brd = branch -d
   cp = cherry-pick
   rb = rebase
   rbi = rebase -i
@@ -21,10 +27,12 @@
   sta = stash
   stl = stash list
   df = diff --color-words='[^[:space:]]'
+  dfc = diff --color-words='[^[:space:]]' --cached
   sh = show --color-words='[^[:space:]]'
   # Reuse the last dropped commit message
   rci = commit -C HEAD@{1}
   # Display tree-like log
+  l = log --graph --date=relative --pretty=tformat:'%Cred%h%Creset -%C(auto)%d%Creset %s %Cgreen(%an %ad)%Creset'
   lg = log --graph --date=relative --pretty=tformat:'%Cred%h%Creset -%C(auto)%d%Creset %s %Cgreen(%an %ad)%Creset'
   # Useful when you have to update your last commit
   # with staged files without editing the commit message.
