@@ -1,4 +1,5 @@
 balena-etcher-electron
+brave-browser
 chromium
 code -n
 code -n $HOME/
