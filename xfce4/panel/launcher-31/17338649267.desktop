@@ -1,0 +1,28 @@
+[Desktop Entry]
+X-SnapInstanceName=thunderbird
+Name=Thunderbird Mail
+Comment=Send and receive mail with Thunderbird
+GenericName=Mail Client
+Keywords=Email;E-mail;Newsgroup;Feed;RSS
+X-SnapAppName=thunderbird
+Exec=env BAMF_DESKTOP_FILE_HINT=/var/lib/snapd/desktop/applications/thunderbird_thunderbird.desktop /snap/bin/thunderbird %u
+Terminal=false
+Type=Application
+Icon=/snap/thunderbird/593/meta/gui/thunderbird.png
+Categories=Application;Network;Email;
+MimeType=x-scheme-handler/mailto;application/x-xpinstall;x-scheme-handler/webcal;x-scheme-handler/mid;message/rfc822;text/calendar;text/vcard;text/x-vcard;
+StartupNotify=true
+Actions=Compose;Contacts
+X-XFCE-Source=file:///var/lib/snapd/desktop/applications/thunderbird_thunderbird.desktop
+
+[Desktop Action Compose]
+Name=Compose New Message
+X-SnapAppName=thunderbird
+Exec=env BAMF_DESKTOP_FILE_HINT=/var/lib/snapd/desktop/applications/thunderbird_thunderbird.desktop /snap/bin/thunderbird -compose
+OnlyShowIn=Messaging Menu;Unity;
+
+[Desktop Action Contacts]
+Name=Contacts
+X-SnapAppName=thunderbird
+Exec=env BAMF_DESKTOP_FILE_HINT=/var/lib/snapd/desktop/applications/thunderbird_thunderbird.desktop /snap/bin/thunderbird -addressbook
+OnlyShowIn=Messaging Menu;Unity;

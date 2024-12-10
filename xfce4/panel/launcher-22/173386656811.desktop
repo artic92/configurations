@@ -1,0 +1,22 @@
+[Desktop Entry]
+X-SnapInstanceName=telegram-desktop
+Name=Telegram
+Comment=New era of messaging
+X-SnapAppName=telegram-desktop
+Exec=env BAMF_DESKTOP_FILE_HINT=/var/lib/snapd/desktop/applications/telegram-desktop_telegram-desktop.desktop /snap/bin/telegram-desktop -- %u
+Icon=/snap/telegram-desktop/6394/meta/gui/icon.png
+Terminal=false
+StartupWMClass=TelegramDesktop
+Type=Application
+Categories=Chat;Network;InstantMessaging;Qt;
+MimeType=x-scheme-handler/tg;x-scheme-handler/tonsite;
+Keywords=tg;chat;im;messaging;messenger;sms;tdesktop;
+Actions=quit;
+SingleMainWindow=true
+X-XFCE-Source=file:///var/lib/snapd/desktop/applications/telegram-desktop_telegram-desktop.desktop
+
+[Desktop Action quit]
+X-SnapAppName=telegram-desktop
+Exec=env BAMF_DESKTOP_FILE_HINT=/var/lib/snapd/desktop/applications/telegram-desktop_telegram-desktop.desktop /snap/bin/telegram-desktop -quit
+Name=Quit Telegram
+Icon=/snap/telegram-desktop/6394/meta/gui/icon.png

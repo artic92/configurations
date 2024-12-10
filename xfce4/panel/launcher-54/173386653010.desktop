@@ -3,28 +3,30 @@ X-SnapInstanceName=chromium
 Version=1.0
 Name=Chromium Web Browser
 GenericName=Web Browser
-GenericName[en_GB]=Web Browser
 Comment=Access the Internet
-Comment[en_GB]=Access the Internet
+X-SnapAppName=chromium
 Exec=env BAMF_DESKTOP_FILE_HINT=/var/lib/snapd/desktop/applications/chromium_chromium.desktop /snap/bin/chromium %U
 Terminal=false
 Type=Application
-Icon=/snap/chromium/1475/chromium.png
+Icon=/snap/chromium/3002/chromium.png
 Categories=Network;WebBrowser;
-MimeType=text/html;text/xml;application/xhtml_xml;x-scheme-handler/http;x-scheme-handler/https;
+MimeType=text/html;text/xml;application/xhtml+xml;application/xml;application/vnd.mozilla.xul+xml;application/rss+xml;application/rdf+xml;image/gif;image/jpeg;image/png;x-scheme-handler/http;x-scheme-handler/https;x-scheme-handler/ftp;x-scheme-handler/chrome;video/webm;application/pdf;
 StartupNotify=true
 StartupWMClass=chromium
-Actions=NewWindow;Incognito;TempProfile;
+Actions=new-window;Incognito;TempProfile;
 X-XFCE-Source=file:///var/lib/snapd/desktop/applications/chromium_chromium.desktop
 
-[Desktop Action NewWindow]
-Name=Open a New Window
+[Desktop Action new-window]
+Name=New Window
+X-SnapAppName=chromium
 Exec=env BAMF_DESKTOP_FILE_HINT=/var/lib/snapd/desktop/applications/chromium_chromium.desktop /snap/bin/chromium
 
 [Desktop Action Incognito]
-Name=Open a New Window in incognito mode
+Name=New Incognito Window
+X-SnapAppName=chromium
 Exec=env BAMF_DESKTOP_FILE_HINT=/var/lib/snapd/desktop/applications/chromium_chromium.desktop /snap/bin/chromium --incognito
 
 [Desktop Action TempProfile]
-Name=Open a New Window with a temporary profile
+Name=New Window with a Temporary Profile
+X-SnapAppName=chromium
 Exec=env BAMF_DESKTOP_FILE_HINT=/var/lib/snapd/desktop/applications/chromium_chromium.desktop /snap/bin/chromium --temp-profile
