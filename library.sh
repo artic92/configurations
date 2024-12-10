@@ -198,7 +198,7 @@ function xfce_backup_config_files()
         # for more details: https://stackoverflow.com/questions/8488253/how-to-force-cp-to-overwrite-without-confirmation
         \cp -f "$xfce4_config_folder"/* "$config_xfce_dir"
 
-        $CP "$xfce4_cache_folder"/xfce4-appfinder/ "$config_xfce_dir"/
+        $CP "$xfce4_cache_folder"/appfinder/ "$config_xfce_dir"/
     fi
 }
 
@@ -212,10 +212,10 @@ function setup_xfce()
         $RM "$xfce4_config_folder"/panel
         $RM "$xfce4_config_folder"/terminal
         $RM "$xfce4_config_folder"/xfconf
-        $RM "$xfce4_cache_folder"/xfce4-appfinder
+        $RM "$xfce4_cache_folder"/appfinder
 
         $LN "$config_xfce_dir"/* "$xfce4_config_folder"/
-        $LN "$config_xfce_dir"/xfce4-appfinder "$xfce4_cache_folder"/
+        $LN "$config_xfce_dir"/appfinder "$xfce4_cache_folder"/
     fi
 }
 
