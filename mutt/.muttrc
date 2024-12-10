@@ -1,0 +1,42 @@
+set from="linux@ariccio.me"
+set my_user="hi@ariccio.me"
+set my_pass="68OhIyCbryzac6lBsiNrSA"
+
+set ssl_starttls=yes
+
+set smtp_url="smtp://$my_user:$my_pass@127.0.0.1:1025"
+
+# workaround for https://github.com/neomutt/neomutt/issues/1211
+set imap_authenticators=login
+
+set folder="imap://$my_user:$my_pass@127.0.0.1:1143/"
+set spoolfile="+INBOX"
+set trash="+Trash"
+set mbox="+Received"
+set move=no
+set record="+Sent"
+set copy=no
+set postponed="+Drafts"
+set postpone=yes
+
+unset imap_passive
+set mail_check=20 # seconds
+set timeout=10 # seconds
+set imap_check_subscribed=yes
+
+# Sidebar
+set sidebar_visible=yes
+set sidebar_short_path=yes
+
+# Macros
+macro index l "c?Folders/linux<enter>" "Go to the Linux mailing list folder"
+macro pager l "c?Folders/linux<enter>" "Go to the Linux mailing list folder"
+
+# ================  Composition  ====================
+set editor = `echo \$EDITOR`
+set edit_headers = yes  # See the headers when editing
+set charset = UTF-8     # value of $LANG; also fallback for send_charset
+# Sender, email address, and sign-off line must match
+unset use_domain        # because joe@localhost is just embarrassing
+set realname = "Antonio Riccio"
+set use_from = yes

@@ -20,6 +20,7 @@ source library.sh
 ###################################################
 CONFIGURE_GIT=1
 CONFIGURE_VIM=1
+CONFIGURE_MUTT=1
 CONFIGURE_BASH=1
 CONFIGURE_SSH=1
 CONFIGURE_GDB=1
@@ -104,5 +105,11 @@ fi
 if [[ $CONFIGURE_TEAMVIEWER -eq 1 ]]; then
     $ECHO -n "configuring teamviewer..."
     setup_teamviewer &> /dev/null &&
+    $ECHO "DONE"
+fi
+
+if [[ $CONFIGURE_MUTT -eq 1 ]]; then
+    $ECHO -n "configuring mutt..."
+    setup_mutt > /dev/null &&
     $ECHO "DONE"
 fi

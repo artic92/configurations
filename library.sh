@@ -51,6 +51,11 @@ function setup_vim()
     $LN "$CONFIGURATIONS_DIR"/vim/.vimrc "$HOME"/.vimrc
 }
 
+function setup_mutt()
+{
+    $LN "$CONFIGURATIONS_DIR"/mutt/.muttrc "$HOME"/.muttrc
+}
+
 function setup_bash()
 {
     local bash_link_name=bashrc
