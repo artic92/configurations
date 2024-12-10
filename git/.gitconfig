@@ -6,9 +6,12 @@
   # List available aliases (not working)
   aliases = !git config --get-regexp alias | sed -re 's/alias\\.(\\S*)\\s(.*)$/\\1 = \\2/g'
   # Command shortcuts
+  a = add
+  adp = add -p
+  p = push
+  pl = pull
   f = fetch
   m = merge
-  adp = add -p
   ci = commit
   cim = commit -m
   co = checkout
