@@ -89,6 +89,8 @@
   sort = version:refname
 [pull]
 	rebase = true
+[push]
+	autoSetupRemote = true
 [credential]
 	helper = cache --timeout=3600
 [color]
