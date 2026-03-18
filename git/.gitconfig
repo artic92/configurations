@@ -50,6 +50,8 @@
   uncommit = reset --soft HEAD~1
   # Remove files from staging area
   unstage = reset HEAD --
+  # Prune origin remotes
+  po = remote prune origin
 [core]
   # Global ignore file (not shared)
   excludesfile = ~/.gitignore_global
