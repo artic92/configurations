@@ -11,6 +11,9 @@
 		{
 			"name": "bash_scripting",
 			"path": "../../bash_scripting"
+		},
+		{
+			"path": "../../private_life"
 		}
 	],
 	"settings": {}
